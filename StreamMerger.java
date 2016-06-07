@@ -1,16 +1,26 @@
 import java.util.Set;
 import java.util.HashSet;
 
-class InputStream {
-  int streamId;
-  int nextValue;
+class InputStream implements Comparable<InputStream>{
+  private Integer streamId;
+  private Integer nextValue;
 
-  int getStreamId(){
+  public InputStream(Integer streamId, Integer nextValue){
+    this.streamId = streamId;
+    this.nextValue = nextValue;
+  }
+
+  public Integer getStreamId(){
     return streamId;
   }
 
-  int getNextValue(){
+  public Integer getNextValue(){
     return nextValue;
+  }
+
+  @Override
+  public int compareTo(InputStream that){
+    return this.getStreamId().compareTo(that.getStreamId());
   }
 }
 
