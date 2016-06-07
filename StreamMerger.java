@@ -22,6 +22,11 @@ class InputStream implements Comparable<InputStream>{
   public int compareTo(InputStream that){
     return this.getStreamId().compareTo(that.getStreamId());
   }
+
+  @Override
+  public String toString(){
+    return this.getStreamId().toString();
+  }
 }
 
 class OutputStream {
@@ -38,9 +43,17 @@ public class StreamMerger {
   }
 
   public void mergeInto(OutputStream stream){
+    streams.forEach(System.out::println);
   }
 
   public static void main(String[] args){
-    new StreamMerger(new HashSet<InputStream>());
+    InputStream ist1 = new InputStream(1,0);
+    InputStream ist2 = new InputStream(2,0);
+
+    Set<InputStream> streams = new HashSet<InputStream>();
+    streams.add(ist1);
+    streams.add(ist2);
+
+    new StreamMerger(streams).mergeInto(new OutputStream());
   }
 }
