@@ -1,5 +1,6 @@
 import java.util.Set;
 import java.util.HashSet;
+import java.util.TreeSet;
 
 class InputStream implements Comparable<InputStream>{
   private Integer streamId;
@@ -43,12 +44,14 @@ public class StreamMerger {
   }
 
   public void mergeInto(OutputStream stream){
-    streams.forEach(System.out::println);
+    TreeSet<InputStream> treeSet = new TreeSet<InputStream>();
+    treeSet.addAll(streams);
+    treeSet.forEach(System.out::println);
   }
 
   public static void main(String[] args){
-    InputStream ist1 = new InputStream(1,0);
-    InputStream ist2 = new InputStream(2,0);
+    InputStream ist1 = new InputStream(2,0);
+    InputStream ist2 = new InputStream(1,0);
 
     Set<InputStream> streams = new HashSet<InputStream>();
     streams.add(ist1);
