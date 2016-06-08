@@ -32,7 +32,9 @@ class InputStream implements Comparable<InputStream>{
 
 class OutputStream {
 
-  void emitValue(int value){}
+  void emitValue(int value){
+    System.out.println(value);
+  }
 
 }
 
@@ -46,7 +48,8 @@ public class StreamMerger {
   public void mergeInto(OutputStream stream){
     TreeSet<InputStream> treeSet = new TreeSet<InputStream>();
     treeSet.addAll(streams);
-    treeSet.forEach(System.out::println);
+    OutputStream outputStream = new OutputStream();
+    treeSet.forEach(item -> outputStream.emitValue(item.getStreamId()));
   }
 
   public static void main(String[] args){
