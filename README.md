@@ -19,7 +19,7 @@ Search algorithm that finds the position of a target value within a sorted array
 * http://josdem.io/techtalk/algorithms/
 
  
- QuickSort
+ Quick Sort
  ----------------------------------------------
 
  Systematic method for placing the elements of an array in order.
