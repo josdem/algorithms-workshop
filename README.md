@@ -57,3 +57,13 @@ Write a program that breaks up a string of words with no spaces into a string wi
 
 * http://josdem.io/techtalk/algorithms/algorithm_fastman/
 
+
+#### To Run
+
+```bash
+groovy Fastman.groovy
+```
+
+#### Review more algorithms
+
+* http://josdem.io/techtalk/algorithms/simple/
