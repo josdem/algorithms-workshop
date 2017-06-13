@@ -1,3 +1,7 @@
+/**
+Write a function that can determine what is the most popular in the array, in this case “34” because it is the number that appears the most often.
+**/
+
 Integer mostPopular(def array){
   Integer occurrences = 0
   Integer mostPopular = 0
