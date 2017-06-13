@@ -1,3 +1,17 @@
+Simple Algorithms
+---------------------------------------------
+
+* Find palindrome
+* Given an array of  integers, find the sum of its elements.
+* Most popular in the array
+* Find the center point of coordinate 2d array
+* Power set
+
+#### Read this as reference
+
+ * http://josdem.io/techtalk/algorithms/simple/
+
+
 Stream Merger
 ----------------------------------------------
 
@@ -18,7 +32,7 @@ Search algorithm that finds the position of a target value within a sorted array
 
 * http://josdem.io/techtalk/algorithms/
 
- 
+
  Quick Sort
  ----------------------------------------------
 
@@ -35,7 +49,7 @@ Binary Tree
 
  Is a tree data structure in which each node has at most two children, this variant is using a rooted binary tree
 
- 
+
 #### Read this as reference
 
 * http://josdem.io/techtalk/algorithms/algorithm_binary_tree/
