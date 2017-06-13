@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class CollectionSum {
 
   private Integer sum(List<Integer> array){
-    return array.stream().mapToInt(Number::intValue).sum();
+    return array.stream().mapToInt(it -> it).sum();
   }
 
   public static void main(String[] args){
