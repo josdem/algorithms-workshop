@@ -1,6 +1,6 @@
 class Fastman {
 
-	def dictionary = ["fast","fat","man","woman"]
+	def dictionary = ["fast","fat","man","strong"]
 
 	private String find(String string){
 		String result = ''
