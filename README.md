@@ -82,6 +82,17 @@ groovy Fastman.groovy
 ```
 
 
+Is Pangram
+------------------------------------------------
+
+Given a sentence, check whether it is a [pangram](https://en.wikipedia.org/wiki/Pangram) or not.
+
+
+#### Read this as reference
+
+* http://josdem.io/techtalk/algorithms/algorithm_is_pangram/
+
+
 Review more algorithms
 --------------------------------------------------
 

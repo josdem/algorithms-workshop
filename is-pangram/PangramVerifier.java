@@ -9,7 +9,6 @@ public class PangramVerifier {
 		return sum == 2015;
 	}
 
-
 	public static void main(String[] args){
 		String quote = "The quick brown fox jumps over the lazy dog";
 		Boolean result = new PangramVerifier().isPangram(quote);
