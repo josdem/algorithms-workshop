@@ -1,7 +1,3 @@
-import java.util.List;
-import java.util.Arrays;
-import java.lang.Character;
-
 public class PangramVerifier {
 
 	private Boolean isPangram(String quote){
