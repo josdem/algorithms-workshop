@@ -7,7 +7,7 @@ public class DigitalSumSorter {
 
 	private List<Integer> sort(List<Integer> numbers){
 		List<String> numbersAsString = new ArrayList<String>();
-		numbersAsString = numbers.stream().map(Object::toString).collect(Collectors.toList());
+		numbersAsString = numbers.stream().map(it -> it.toString()).collect(Collectors.toList());
 		numbersAsString.forEach(System.out::println);
 		return new ArrayList<Integer>();
 	}
