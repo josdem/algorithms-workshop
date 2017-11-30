@@ -92,6 +92,16 @@ Given a sentence, check whether it is a [pangram](https://en.wikipedia.org/wiki/
 
 * http://josdem.io/techtalk/algorithms/algorithm_is_pangram/
 
+Get Month Name
+------------------------------------------------
+
+Map the given integer to a month.
+
+
+#### Read this as reference
+
+* http://josdem.io/techtalk/algorithms/get_month_name/
+
 
 Review more algorithms
 --------------------------------------------------
