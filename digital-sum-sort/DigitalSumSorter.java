@@ -13,9 +13,9 @@ public class DigitalSumSorter {
 	}
 
 	public static void main(String[] args){
-		List<Integer> numbers = Arrays.asList(13, 20, 7, 4);
+		List<Integer> numbers = Arrays.asList(15, 20, 4, 8);
 		List<Integer> result = new DigitalSumSorter().sort(numbers);
-    assert Arrays.asList(2,4,4,7).equals(result);
+    assert Arrays.asList(2,4,6,8).equals(result);
 	}
 
 }
