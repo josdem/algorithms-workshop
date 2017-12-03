@@ -6,8 +6,7 @@ import java.util.stream.Collectors;
 public class DigitalSumSorter {
 
 	private List<Integer> sort(List<Integer> numbers){
-		List<String> numbersAsString = new ArrayList<String>();
-		numbersAsString = numbers.stream().map(it -> it.toString()).collect(Collectors.toList());
+		List<String> numbersAsString = numbers.stream().map(it -> it.toString()).collect(Collectors.toList());
     List<Integer> result = numbersAsString.stream().map(it -> it.chars().map( ch -> Integer.parseInt(Character.toString((char) ch))).sum()).sorted().collect(Collectors.toList());
 		return result;
 	}
