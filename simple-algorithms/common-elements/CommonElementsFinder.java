@@ -3,10 +3,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-/*
-I have two arrayLists with 5 integer. I want to find a way to return the common elements of the two lists.
-*/
-
 public class CommonElementsFinder {
 
   private List<Integer> find(List<Integer> first, List<Integer> second){
