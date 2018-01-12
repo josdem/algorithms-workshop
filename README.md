@@ -8,6 +8,8 @@ Simple Algorithms
 * Most popular in the array
 * Find the center point of coordinate 2d array
 * Power set
+* Collection Adder
+* Common Elements in two Collections
 
 #### Read this as reference
 
@@ -115,10 +117,3 @@ Sort sum digits from elements in a collection.
 * http://josdem.io/techtalk/algorithms/digital_sum_sort/
 
 
-
-Review more algorithms
---------------------------------------------------
-
-#### Here
-
-* http://josdem.io/techtalk/algorithms/simple/
