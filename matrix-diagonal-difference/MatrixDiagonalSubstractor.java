@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-public class MatrixAdder {
+public class MatrixDiagonalSubstractor {
 
   private int sum(int[][] matrix){
     int diagonalA = 0;
@@ -27,7 +27,7 @@ public class MatrixAdder {
       {10, 8,-12},
     };
 
-    int result = new MatrixAdder().sum(matrix);
+    int result = new MatrixDiagonalSubstractor().sum(matrix);
     assert 15 == result;
   }
 
