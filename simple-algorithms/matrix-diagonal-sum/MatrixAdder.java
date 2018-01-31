@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class MatrixAdder {
 
   private int sum(int[][] matrix){
@@ -15,18 +17,18 @@ public class MatrixAdder {
         }
       }
     }
-    return diagonalA + diagonalB;
+    return Math.abs(diagonalA - diagonalB);
   }
 
   public static void main(String[] args){
     int[][] matrix = {
-      {9, 2, 4},
-      {4, 5, 6},
-      {1, 7, 8},
+      {11, 2,  4},
+      { 4, 5,  6},
+      {10, 8,-12},
     };
 
     int result = new MatrixAdder().sum(matrix);
-    System.out.println("sum: " + result);
+    assert 15 == result;
   }
 
 }
