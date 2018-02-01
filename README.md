@@ -1,15 +1,16 @@
 Simple Algorithms
 ---------------------------------------------
 
-* Find palindrome
+* Find Palindrome
 * Biggest Number
 * Given an array of  integers, find the sum of its elements
 * Staircase
-* Most popular in the array
-* Find the center point of coordinate 2d array
-* Power set
+* Most Popular in the array
+* Find the Center Point of Coordinate 2d Array
+* Power Set
 * Collection Adder
 * Common Elements in two Collections
+* Plus Minus
 
 #### Read this as reference
 
