@@ -117,3 +117,14 @@ Sort sum digits from elements in a collection.
 * http://josdem.io/techtalk/algorithms/digital_sum_sort/
 
 
+Matrix Diagonal Difference
+------------------------------------------------
+
+Given a square matrix of size N x N, calculate the absolute difference between the sums of its diagonals.
+
+
+#### Read this as reference
+
+* http://josdem.io/techtalk/algorithms/matrix_diagonal_difference/
+
+
