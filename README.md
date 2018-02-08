@@ -1,16 +1,17 @@
 Simple Algorithms
 ---------------------------------------------
 
-* Find Palindrome
-* Biggest Number
-* Given an array of  integers, find the sum of its elements
-* Staircase
-* Most Popular in the array
-* Center Point in 2d Array
-* Power Set
-* Collection Adder
-* Common Elements in two Collections
-* Plus Minus
+* [Find Palindrome](http://josdem.io/techtalk/algorithms/simple/#Palindrome)
+* [Biggest Number](http://josdem.io/techtalk/algorithms/simple/#Biggest_Number)
+* [Sum a Collection](http://josdem.io/techtalk/algorithms/simple/#Sum_a_Collection)
+* [Staircase](http://josdem.io/techtalk/algorithms/simple/#Staircase)
+* [Most Popular in the array](http://josdem.io/techtalk/algorithms/simple/#Most_Popular_in_the_Array)
+* [Center Point in 2d Array](http://josdem.io/techtalk/algorithms/simple/#Center_Point_in_2d_Array)
+* [Power Set](http://josdem.io/techtalk/algorithms/simple/#Power_Set)
+* [Collection Adder](http://josdem.io/techtalk/algorithms/simple/#Collection_Adder)
+* [Common Elements in two Collections](http://josdem.io/techtalk/algorithms/simple/#Common_Elements_in_two_Collections)
+* [Plus Minus](http://josdem.io/techtalk/algorithms/simple/#Plus_Minus)
+* [Min-Max Sum](http://josdem.io/techtalk/algorithms/simple/#Min_Max_Sum)
 
 #### Read this as reference
 
