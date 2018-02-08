@@ -6,7 +6,7 @@ Simple Algorithms
 * Given an array of  integers, find the sum of its elements
 * Staircase
 * Most Popular in the array
-* Find the Center Point of Coordinate 2d Array
+* Center Point in 2d Array
 * Power Set
 * Collection Adder
 * Common Elements in two Collections
