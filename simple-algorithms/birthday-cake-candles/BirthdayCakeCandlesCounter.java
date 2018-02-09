@@ -1,10 +1,14 @@
 import java.util.List;
 import java.util.Arrays;
+import java.util.Optional;
+import java.util.Comparator;
 
 public class BirthdayCakeCandlesCounter {
 
 	private Integer count(List<Integer> sizes){
-		return 0;
+		Optional<Integer> max = sizes.stream().max(Integer::compare);
+		Long result = sizes.stream().filter(it -> it == max.get()).count();
+		return result.intValue();
 	}
 	
 	public static void main(String[] args){
