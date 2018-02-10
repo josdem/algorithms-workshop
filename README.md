@@ -131,3 +131,14 @@ Given a square matrix of size N x N, calculate the absolute difference between t
 * http://josdem.io/techtalk/algorithms/matrix_diagonal_difference/
 
 
+Grading Students
+------------------------------------------------
+
+Automate the rounding process based in custom rules.
+
+#### Read this as reference
+
+* http://josdem.io/techtalk/algorithms/grading_students/
+
+
+
