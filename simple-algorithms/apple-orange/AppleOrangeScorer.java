@@ -4,46 +4,75 @@ import java.util.Arrays;
 
 public class AppleOrangeScorer {
 
-  private List<Integer> score(
-      List<Integer> houseWidth,
-      List<Integer> treeDistances,
+  private Pair score(
+      Pair houseWidth,
+      Pair treeDistance,
       List<Integer>larryThrows,
       List<Integer>robThrows){
 
-    List<Integer> result = new ArrayList<Integer>();
+    Pair result = new Pair();
     Integer larryScore = 0;
     Integer robScore = 0;
 
     for(Integer lthrow: larryThrows){
-      if(treeDistances.get(0) + lthrow >= houseWidth.get(0) && treeDistances.get(0) + lthrow <= houseWidth.get(1)){
+      if(treeDistance.getFirst() + lthrow >= houseWidth.getFirst() &&
+         treeDistance.getFirst() + lthrow <= houseWidth.getLast()){
         larryScore++;
       }
     }
 
     for(Integer rthrow: robThrows){
-      if(treeDistances.get(1) + rthrow >= houseWidth.get(0) && treeDistances.get(1) + rthrow <= houseWidth.get(1)){
+      if(treeDistance.getLast() + rthrow >= houseWidth.getFirst() &&
+         treeDistance.getLast() + rthrow <= houseWidth.getLast()){
         robScore++;
       }
     }
 
-    result.add(larryScore);
-    result.add(robScore);
+    result.setFirst(larryScore);
+    result.setLast(robScore);
 
     return result;
   }
 
   public static void main(String[] args){
-    List<Integer> houseWidth = Arrays.asList(7, 11);
-    List<Integer> treeDistances = Arrays.asList(5, 15);
+    Pair houseWidth = new Pair(7, 11);
+    Pair treeDistance = new Pair(5, 15);
+
     List<Integer> larryThrows = Arrays.asList(-2, 2, 1);
     List<Integer> robThrows = Arrays.asList(5, -6);
 
-    List<Integer> result = new AppleOrangeScorer().score(houseWidth, treeDistances, larryThrows, robThrows);
-    System.out.println(result);
+    Pair result = new AppleOrangeScorer().score(houseWidth, treeDistance, larryThrows, robThrows);
 
-    assert 2 == result.size();
-    assert 1 == result.get(0);
-    assert 1 == result.get(1);
+    assert 1 == result.getFirst();
+    assert 1 == result.getLast();
   }
 
+}
+
+class Pair {
+  private Integer first;
+  private Integer last;
+
+  public Pair(){}
+
+  public Pair(Integer first, Integer last){
+    this.first = first;
+    this.last = last;
+  }
+
+  public void setFirst(Integer first){
+    this.first = first;
+  }
+
+  public void setLast(Integer last){
+    this.last = last;
+  }
+
+  public Integer getFirst(){
+    return first;
+  }
+
+  public Integer getLast(){
+    return last;
+  }
 }
