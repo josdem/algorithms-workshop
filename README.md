@@ -141,4 +141,15 @@ Automate the rounding process based in custom rules.
 * http://josdem.io/techtalk/algorithms/grading_students/
 
 
+Apple and Orange
+------------------------------------------------
+
+Calculate the scores for Larry and Rob and report them each based in range measure..
+
+#### Read this as reference
+
+* http://josdem.io/techtalk/algorithms/apple_orange/
+
+
+
 
