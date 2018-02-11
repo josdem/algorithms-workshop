@@ -9,7 +9,27 @@ public class AppleOrangeScorer {
       List<Integer> treeDistances,
       List<Integer>larryThrows,
       List<Integer>robThrows){
-    return new ArrayList<Integer>();
+
+    List<Integer> result = new ArrayList<Integer>();
+    Integer larryScore = 0;
+    Integer robScore = 0;
+
+    for(Integer lthrow: larryThrows){
+      if(treeDistances.get(0) + lthrow >= houseWidth.get(0) && treeDistances.get(0) + lthrow <= houseWidth.get(1)){
+        larryScore++;
+      }
+    }
+
+    for(Integer rthrow: robThrows){
+      if(treeDistances.get(1) + rthrow >= houseWidth.get(0) && treeDistances.get(1) + rthrow <= houseWidth.get(1)){
+        robScore++;
+      }
+    }
+
+    result.add(larryScore);
+    result.add(robScore);
+
+    return result;
   }
 
   public static void main(String[] args){
@@ -19,6 +39,7 @@ public class AppleOrangeScorer {
     List<Integer> robThrows = Arrays.asList(5, -6);
 
     List<Integer> result = new AppleOrangeScorer().score(houseWidth, treeDistances, larryThrows, robThrows);
+    System.out.println(result);
 
     assert 2 == result.size();
     assert 1 == result.get(0);
