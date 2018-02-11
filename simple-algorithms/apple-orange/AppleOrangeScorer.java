@@ -21,7 +21,9 @@ public class AppleOrangeScorer {
       }
     }
 
-    //if(larryThrows.stream().allMatch(x -> x)) {}
+   Long larryLambda = larryThrows.stream().filter(it -> treeDistance.getFirst() + it >= houseWidth.getFirst() && treeDistance.getFirst() + it <= houseWidth.getLast()).count();
+
+    System.out.println("larry: " + larryLambda);
 
     for(Integer rthrow: robThrows){
       if(treeDistance.getLast() + rthrow >= houseWidth.getFirst() &&
