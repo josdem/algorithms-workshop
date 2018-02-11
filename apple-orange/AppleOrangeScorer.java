@@ -11,29 +11,27 @@ public class AppleOrangeScorer {
       List<Integer>robThrows){
 
     Pair result = new Pair();
-    Integer larryScore = 0;
-    Integer robScore = 0;
 
     for(Integer lthrow: larryThrows){
       if(treeDistance.getFirst() + lthrow >= houseWidth.getFirst() &&
          treeDistance.getFirst() + lthrow <= houseWidth.getLast()){
-        larryScore++;
+        //larryScore++;
       }
     }
 
-   Long larryLambda = larryThrows.stream().filter(it -> treeDistance.getFirst() + it >= houseWidth.getFirst() && treeDistance.getFirst() + it <= houseWidth.getLast()).count();
+   Long larryScore = larryThrows.stream().filter(it -> treeDistance.getFirst() + it >= houseWidth.getFirst() && treeDistance.getFirst() + it <= houseWidth.getLast()).count();
 
-    System.out.println("larry: " + larryLambda);
+   Long robScore = robThrows.stream().filter(it -> treeDistance.getLast() + it >= houseWidth.getFirst() && treeDistance.getLast() + it <= houseWidth.getLast()).count();
 
     for(Integer rthrow: robThrows){
       if(treeDistance.getLast() + rthrow >= houseWidth.getFirst() &&
          treeDistance.getLast() + rthrow <= houseWidth.getLast()){
-        robScore++;
+        //robScore++;
       }
     }
 
-    result.setFirst(larryScore);
-    result.setLast(robScore);
+    result.setFirst(larryScore.intValue());
+    result.setLast(robScore.intValue());
 
     return result;
   }
