@@ -21,6 +21,8 @@ public class AppleOrangeScorer {
       }
     }
 
+    //if(larryThrows.stream().allMatch(x -> x)) {}
+
     for(Integer rthrow: robThrows){
       if(treeDistance.getLast() + rthrow >= houseWidth.getFirst() &&
          treeDistance.getLast() + rthrow <= houseWidth.getLast()){
