@@ -20,9 +20,9 @@ public class KangarooMeasurer {
 
 	public static void main(String[] args){
 		Integer startUnus = 0;
-		Integer jumpsUnus = 2;
-		Integer startDuo = 5;
-		Integer jumpsDuo = 3;
+		Integer jumpsUnus = 3;
+		Integer startDuo = 4;
+		Integer jumpsDuo = 2;
 		Boolean meets = new KangarooMeasurer().measure(startUnus, jumpsUnus, startDuo, jumpsDuo);
 		assert true == meets;
 	}
