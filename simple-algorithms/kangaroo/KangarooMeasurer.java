@@ -8,7 +8,9 @@ public class KangarooMeasurer {
 		Integer startDuo,
 		Integer jumpsDuo){
 
-		return false;
+		Integer result = jumpsUnus - jumpsDuo + startUnus + startDuo;
+
+		return result > 0;
 	}
 
 	public static void main(String[] args){
