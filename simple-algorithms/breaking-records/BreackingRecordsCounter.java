@@ -1,26 +1,18 @@
 import java.util.List;
+import java.util.Set;
 import java.util.Arrays;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class BreackingRecordsCounter {
 
 	private Pair count(List<Integer> scores){
-    Integer highest = scores.get(0);
-    Integer lowest = scores.get(0);
-    Integer highestCounter = 0;
-    Integer lowestCoutner = 0;
+    final Integer start = scores.get(0);
 
-    for(Integer score : scores){
-      if(score > highest) {
-        highestCounter++;
-        highest = score;
-      }
-      if(score < lowest){
-        lowestCoutner++;
-        lowest = score;
-      }
-    }
+    Set<Integer> high = scores.stream().filter(it -> it > start).collect(Collectors.toSet());
+    Set<Integer> low = scores.stream().filter(it -> it < start).collect(Collectors.toSet());
 
-		return new Pair(highestCounter, lowestCoutner);
+		return new Pair(high.size(), low.size());
 	}
 
 	public static void main(String[] args){
