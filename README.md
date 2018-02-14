@@ -151,5 +151,15 @@ Calculate the scores for Larry and Rob and report them each based in range measu
 * http://josdem.io/techtalk/algorithms/apple_orange/
 
 
+Kangaroo
+------------------------------------------------
+
+Get Kangaroos location based in their velocity
+
+#### Read this as reference
+
+* http://josdem.io/techtalk/algorithms/kangaroo/
+
+
 
 
