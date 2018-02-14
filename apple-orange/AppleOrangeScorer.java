@@ -5,16 +5,16 @@ import java.util.Arrays;
 public class AppleOrangeScorer {
 
   private Pair score(
-      Pair houseWidth,
-      Pair treeDistance,
-      List<Integer>larryThrows,
-      List<Integer>robThrows){
+    Pair houseWidth,
+    Pair treeDistance,
+    List<Integer>larryThrows,
+    List<Integer>robThrows){
 
     Pair result = new Pair();
 
-   Long larryScore = larryThrows.stream().filter(it -> treeDistance.getFirst() + it >= houseWidth.getFirst() && treeDistance.getFirst() + it <= houseWidth.getLast()).count();
+    Long larryScore = larryThrows.stream().filter(it -> treeDistance.getFirst() + it >= houseWidth.getFirst() && treeDistance.getFirst() + it <= houseWidth.getLast()).count();
 
-   Long robScore = robThrows.stream().filter(it -> treeDistance.getLast() + it >= houseWidth.getFirst() && treeDistance.getLast() + it <= houseWidth.getLast()).count();
+    Long robScore = robThrows.stream().filter(it -> treeDistance.getLast() + it >= houseWidth.getFirst() && treeDistance.getLast() + it <= houseWidth.getLast()).count();
 
     result.setFirst(larryScore.intValue());
     result.setLast(robScore.intValue());
@@ -37,30 +37,4 @@ public class AppleOrangeScorer {
 
 }
 
-class Pair {
-  private Integer first;
-  private Integer last;
 
-  public Pair(){}
-
-  public Pair(Integer first, Integer last){
-    this.first = first;
-    this.last = last;
-  }
-
-  public void setFirst(Integer first){
-    this.first = first;
-  }
-
-  public void setLast(Integer last){
-    this.last = last;
-  }
-
-  public Integer getFirst(){
-    return first;
-  }
-
-  public Integer getLast(){
-    return last;
-  }
-}
