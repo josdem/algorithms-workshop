@@ -12,7 +12,8 @@ Simple Algorithms
 * [Common Elements in two Collections](http://josdem.io/techtalk/algorithms/simple/#Common_Elements_in_two_Collections)
 * [Plus Minus](http://josdem.io/techtalk/algorithms/simple/#Plus_Minus)
 * [Min-Max Sum](http://josdem.io/techtalk/algorithms/simple/#Min_Max_Sum)
-* [Birthday Cake Candles](#Birthday_Cake_Candles)
+* [Birthday Cake Candles](http://josdem.io/techtalk/algorithms/simple/#Birthday_Cake_Candles)
+* [Breaking The Records](http://josdem.io/techtalk/algorithms/simple/#Breaking_Records)
 
 #### Read this as reference
 
