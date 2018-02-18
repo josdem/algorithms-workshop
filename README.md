@@ -14,6 +14,7 @@ Simple Algorithms
 * [Min-Max Sum](http://josdem.io/techtalk/algorithms/simple/#Min_Max_Sum)
 * [Birthday Cake Candles](http://josdem.io/techtalk/algorithms/simple/#Birthday_Cake_Candles)
 * [Breaking The Records](http://josdem.io/techtalk/algorithms/simple/#Breaking_Records)
+* [Birthday Chocolate](http://josdem.io/techtalk/algorithms/simple/#Birthday_Chocolate)
 
 #### Read this as reference
 
