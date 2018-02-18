@@ -9,12 +9,11 @@ import java.util.stream.Stream;
 public class BirthdayChocolateCalculator {
 
   private Integer compute(List<Integer> numbers, final Integer month, final Integer day) {
-
     Integer types = 0;
 
     List<List<Integer>> sets =
       IntStream.range(1, numbers.size())
-      .mapToObj(it -> numbers.subList(it - 1, it + 1))
+      .mapToObj(it -> numbers.subList(it - month + 1, it + month - 1))
       .collect(Collectors.toList());
 
     for(List<Integer> set : sets){
