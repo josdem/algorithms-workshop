@@ -10,20 +10,20 @@ public class BirthdayChocolateCalculator {
 
   private Integer compute(List<Integer> numbers, final Integer month, final Integer day) {
 
-    List<List<Integer>> subSets =
-      IntStream.range(1, 5)
+    Integer types = 0;
+
+    List<List<Integer>> sets =
+      IntStream.range(1, numbers.size())
       .mapToObj(it -> numbers.subList(it - 1, it + 1))
       .collect(Collectors.toList());
 
-    for(List<Integer> set: subSets){
-      set.forEach(System.out::println);
-      System.out.println("-------");
+    for(List<Integer> set : sets){
+      if(set.stream().mapToInt(Integer::intValue).sum() == day){
+        types++;
+      }
     }
 
-    System.out.println("---");
-
-
-    return 0;
+    return types;
   }
 
   public static void main(String[] args){
