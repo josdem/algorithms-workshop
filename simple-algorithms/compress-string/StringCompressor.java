@@ -6,7 +6,7 @@ public class StringCompressor {
 		string.chars()
         .mapToObj(i -> (char)i)
         .collect(Collectors.groupingBy(it -> it, Collectors.counting()))
-    		.forEach((k, v) -> System.out.println((k + ":" + v)));    
+    		.forEach((k, v) -> System.out.println((k.class + ":" + v.class)));    
 		return "";
 	}
 	
