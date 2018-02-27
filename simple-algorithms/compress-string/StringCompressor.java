@@ -1,19 +1,23 @@
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StringCompressor {
 
 	private String compress(String string){
-		string.chars()
+		Map<Character, Long> map = string.chars()
         .mapToObj(i -> (char)i)
-        .collect(Collectors.groupingBy(it -> it, Collectors.counting()))
-    		.forEach((k, v) -> System.out.println((k.class + ":" + v.class)));    
-		return "";
+        .collect(Collectors.groupingBy(it -> it, Collectors.counting()));
+
+    StringBuffer sb = new StringBuffer();    
+
+    map.forEach((k,v) -> sb.append(k.toString() + v.toString()));    
+		return sb.toString();
 	}
 	
 	public static void main(String[] args){
 		String string = "aaabbbbcc";
 		String result = new StringCompressor().compress(string);
-		assert "a3b4c2" == result;
+		System.out.println(result);		
 	}
 
 }
