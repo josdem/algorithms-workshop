@@ -1,6 +1,12 @@
+import java.util.stream.Collectors;
+
 public class StringCompressor {
 
 	private String compress(String string){
+		string.chars()
+        .mapToObj(i -> (char)i)
+        .collect(Collectors.groupingBy(it -> it, Collectors.counting()))
+    		.forEach((k, v) -> System.out.println((k + ":" + v)));    
 		return "";
 	}
 	
