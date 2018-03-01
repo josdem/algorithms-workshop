@@ -1,11 +1,25 @@
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class SumPairDivider {
 
 	private Integer compute(List<Integer> numbers){
-		return 0;
+		Integer result = 0;
+
+		List<List<Integer>> sets =
+      IntStream.range(0, numbers.size() - 2)
+      .mapToObj(it -> numbers.subList(it, it + 2))
+      .collect(Collectors.toList());
+
+    for(List<Integer> set : sets){
+    	set.forEach(System.out::println);
+    	System.out.println("---");
+    }  
+
+		return result;
 	}
 	
 	public static void main(String[] args){
