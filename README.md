@@ -16,6 +16,7 @@ Simple Algorithms
 * [Breaking The Records](http://josdem.io/techtalk/algorithms/simple/#Breaking_Records)
 * [Birthday Chocolate](http://josdem.io/techtalk/algorithms/simple/#Birthday_Chocolate)
 * [String Compressor](http://josdem.io/techtalk/algorithms/simple/#String_Compressor)
+* [Bon Appetit](http://josdem.io/techtalk/algorithms/simple/#Bon_Appetit)
 
 #### Read this as reference
 
