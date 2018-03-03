@@ -16,8 +16,7 @@ public class SockPairMatcher{
       .collect(Collectors.toList());
 
     Long result = values.stream()
-      .map(it -> it / 2)
-      .mapToLong(Long::longValue)
+      .mapToLong(it -> it / 2)
       .sum();
 
     return result.intValue();
