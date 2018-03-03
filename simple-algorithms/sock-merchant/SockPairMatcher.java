@@ -1,11 +1,26 @@
+import java.util.Map;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class SockPairMatcher{
 
   private Integer match(List<Integer> colors){
-    return 0;
+    Map<Integer, Long> map = colors.stream()
+      .collect(Collectors.groupingBy(it->it, Collectors.counting()));
+
+    List<Long> values = map.entrySet().stream()
+      .filter(it -> it.getValue() / 2 > 0)
+      .map(Map.Entry::getValue)
+      .collect(Collectors.toList());
+
+    Long result = values.stream()
+      .map(it -> it / 2)
+      .mapToLong(Long::longValue)
+      .sum();
+
+    return result.intValue();
   }
 
   public static void main(String[] args){
