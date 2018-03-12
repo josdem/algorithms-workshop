@@ -1,9 +1,15 @@
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Map;
 
 public class ShopCalculator {
 
 	private Integer calculate(List<Integer> keyboards, List<Integer> usbs){
+		List<Map.Entry<Integer,Integer>> pairList = new ArrayList<Map.Entry<Integer,Integer>>();
+		keyboards.forEach( k ->
+		  System.out.println(k)
+		);
     return 0;
 	}
 
