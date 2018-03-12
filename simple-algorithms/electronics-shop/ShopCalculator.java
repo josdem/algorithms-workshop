@@ -22,7 +22,7 @@ public class ShopCalculator {
 
 		Optional<Integer> result = electronicsCost.stream().filter(it -> it < amount).max(Integer::compare);
 		
-    return result.get();
+    return result.isPresent() ? result.get() : -1;
 	}
 
 	public static void main(String[] args){
