@@ -20,8 +20,8 @@ public class ShopCalculator {
 
 		List<Integer> electronicsCost = pairList.stream().map(entry -> entry.getKey() + entry.getValue()).collect(Collectors.toList());
 
-		Optional<Integer> result = electronicsCost.stream().filter(it -> it < amount).max(Integer::compare);
-		
+		Optional<Integer> result = electronicsCost.stream().filter(it -> it <= amount).max(Integer::compare);
+
     return result.isPresent() ? result.get() : -1;
 	}
 
