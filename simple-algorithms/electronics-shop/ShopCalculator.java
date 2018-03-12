@@ -2,13 +2,14 @@ import java.util.Map;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.AbstractMap.SimpleEntry;
 
 import java.util.stream.Collectors;
 
 public class ShopCalculator {
 
-	private Integer calculate(Integer amount, List<Integer> keyboards, List<Integer> usbs){
+	private Integer calculate(final Integer amount, List<Integer> keyboards, List<Integer> usbs){
 		List<Map.Entry<Integer,Integer>> pairList = new ArrayList<Map.Entry<Integer,Integer>>();
 
 		keyboards.forEach( k ->
@@ -17,9 +18,11 @@ public class ShopCalculator {
 		  )
 		);
 
-		List<Integer> result = pairList.stream().map(entry -> entry.getKey() + entry.getValue()).collect(Collectors.toList());
-		result.forEach(System.out::println);
-    return 0;
+		List<Integer> electronicsCost = pairList.stream().map(entry -> entry.getKey() + entry.getValue()).collect(Collectors.toList());
+
+		Optional<Integer> result = electronicsCost.stream().filter(it -> it < amount).max(Integer::compare);
+		
+    return result.get();
 	}
 
 	public static void main(String[] args){
