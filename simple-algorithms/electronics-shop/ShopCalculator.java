@@ -8,7 +8,9 @@ public class ShopCalculator {
 	private Integer calculate(List<Integer> keyboards, List<Integer> usbs){
 		List<Map.Entry<Integer,Integer>> pairList = new ArrayList<Map.Entry<Integer,Integer>>();
 		keyboards.forEach( k ->
-		  System.out.println(k)
+		  usbs.forEach( u ->
+		  	System.out.println("k: " + k + " u: " + u)
+		  )
 		);
     return 0;
 	}
