@@ -1,24 +1,32 @@
+import java.util.Map;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.AbstractMap.SimpleEntry;
+
+import java.util.stream.Collectors;
 
 public class ShopCalculator {
 
-	private Integer calculate(List<Integer> keyboards, List<Integer> usbs){
+	private Integer calculate(Integer amount, List<Integer> keyboards, List<Integer> usbs){
 		List<Map.Entry<Integer,Integer>> pairList = new ArrayList<Map.Entry<Integer,Integer>>();
+
 		keyboards.forEach( k ->
-		  usbs.forEach( u ->
-		  	System.out.println("k: " + k + " u: " + u)
+		  usbs.forEach( u ->		  	
+		  	pairList.add(new SimpleEntry<Integer,Integer>(k,u))
 		  )
 		);
+
+		List<Integer> result = pairList.stream().map(entry -> entry.getKey() + entry.getValue()).collect(Collectors.toList());
+		result.forEach(System.out::println);
     return 0;
 	}
 
 	public static void main(String[] args){
 		List<Integer> keyboards = Arrays.asList(3, 1);
 		List<Integer> usbs = Arrays.asList(5, 2, 8);
-		Integer result = new ShopCalculator().calculate(keyboards, usbs);
+		Integer amount = 10;
+		Integer result = new ShopCalculator().calculate(amount, keyboards, usbs);
 		assert 9 == result;
 	}
 	
