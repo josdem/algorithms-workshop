@@ -18,6 +18,7 @@ Simple Algorithms
 * [String Compressor](http://josdem.io/techtalk/algorithms/simple/#String_Compressor)
 * [Bon Appetit](http://josdem.io/techtalk/algorithms/simple/#Bon_Appetit)
 * [Sock Merchant](http://josdem.io/techtalk/algorithms/simple/#Sock_Merchant)
+* [Electronics Shop](http://josdem.io/techtalk/algorithms/simple/#Electronics_Shop)
 
 #### Read this as reference
 
