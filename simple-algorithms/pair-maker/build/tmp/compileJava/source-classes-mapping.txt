@@ -1,4 +1,0 @@
-com/jos/dem/pair/Pair.java
- com.jos.dem.pair.Pair
-com/jos/dem/pair/PairMaker.java
- com.jos.dem.pair.PairMaker
