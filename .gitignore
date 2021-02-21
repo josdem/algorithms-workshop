@@ -1,3 +1,5 @@
 *.class
 **swp
 **swo
+**.idea
+**.iml
