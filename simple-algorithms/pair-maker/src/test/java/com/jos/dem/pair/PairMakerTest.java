@@ -28,7 +28,7 @@ class PairMakerTest {
     }
 
     private List<Pair> expectedPairs() {
-        return Arrays.asList(new Pair(1, 5), new Pair(6, 3), new Pair(2, 4), new Pair(5, 6));
+        return Arrays.asList(new Pair(1, 5), new Pair(5, 6), new Pair(2, 4), new Pair(4, 5), new Pair(5, 6));
     }
 
 }

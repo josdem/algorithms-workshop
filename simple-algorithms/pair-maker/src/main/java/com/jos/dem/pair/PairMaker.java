@@ -9,6 +9,7 @@ public class PairMaker {
     public List<Pair> make(List<Integer> numbers){
         return IntStream.range(0, numbers.size()-1)
                 .mapToObj(i -> new Pair(numbers.get(i), numbers.get(i + 1)))
+                .filter(pair -> pair.getB() > pair.getA())
                 .collect(Collectors.toList());
     }
 
