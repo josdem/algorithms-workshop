@@ -1,4 +1,4 @@
-//Remove all of the vowels from a string
+//Remove all vowels from a string
 //When: String is: "This website does not work!"
 //Then: Result should be: "Ths wbst ds nt wrk!"
 
