@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class DisemVowelTrollRemoverTest {
+class VowelTrollRemoverTest {
 
-  private DisemVowelTrollRemover remover = new DisemVowelTrollRemover();
+  private VowelTrollRemover remover = new VowelTrollRemover();
 
   @Test
   @DisplayName("Removing vowels")
