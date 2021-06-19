@@ -9,12 +9,9 @@ Your task is to write a function maskify, which changes all but the last four ch
 public class Maskarator {
 
   public String maskify(String keyword) {
-    if (keyword.length() < 5) {
-      return keyword;
-    }
-    StringBuilder sb = new StringBuilder();
-    keyword.substring(0, keyword.length() - 4).chars().forEach(ch -> sb.append("#"));
-    sb.append(keyword.substring(keyword.length() - 4));
-    return sb.toString();
+    return keyword.length() < 5
+        ? keyword
+        : keyword.substring(0, keyword.length() - 4).replaceAll(".", "#")
+            + keyword.substring(keyword.length() - 4);
   }
 }
