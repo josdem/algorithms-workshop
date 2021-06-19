@@ -9,6 +9,6 @@ Your task is to write a function maskify, which changes all but the last four ch
 public class Maskarator {
 
   public String maskify(String keyword) {
-    return keyword;
+    return null;
   }
 }
