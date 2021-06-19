@@ -23,4 +23,13 @@ class MaskaratorTest {
     assertEquals("############5616", maskarator.maskify("4556364607935616"));
     assertEquals("#######5616", maskarator.maskify("64607935616"));
   }
+
+  @Test
+  @DisplayName("Maskify special strings")
+  void shouldMaskifySpecialStrings() {
+    assertEquals("##ippy", maskarator.maskify("Skippy"));
+    assertEquals(
+        "####################################man!",
+        maskarator.maskify("Nananananananananananananananana Batman!"));
+  }
 }

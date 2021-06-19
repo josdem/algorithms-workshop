@@ -6,14 +6,15 @@ However, since someone could look over your shoulder, you don't want that shown 
 Your task is to write a function maskify, which changes all but the last four characters into '#'.
  */
 
-import java.util.stream.Collectors;
-
 public class Maskarator {
 
   public String maskify(String keyword) {
     if (keyword.length() < 5) {
       return keyword;
     }
-    return keyword;
+    StringBuilder sb = new StringBuilder();
+    keyword.substring(0, keyword.length() - 4).chars().forEach(ch -> sb.append("#"));
+    sb.append(keyword.substring(keyword.length() - 4));
+    return sb.toString();
   }
 }
