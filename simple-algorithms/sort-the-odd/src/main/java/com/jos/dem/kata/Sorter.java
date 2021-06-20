@@ -4,7 +4,9 @@ package com.jos.dem.kata;
 You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
  */
 
-import java.util.*;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
