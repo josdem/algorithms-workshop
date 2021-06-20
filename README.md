@@ -7,7 +7,7 @@ Simple Algorithms
 gradle test
 ```
 
-#### To run some examples using Java
+#### To run some examples using [Java](https://www.java.com/en/)
 
 ```bash
 javac ${java-file}
