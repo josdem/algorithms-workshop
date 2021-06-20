@@ -1,5 +1,7 @@
-Simple Algorithms
+Algorithms Workshop
 ---------------------------------------------
+
+### Instructions
 
 #### To run some examples using [Gradle](https://gradle.org/)
 
@@ -17,6 +19,9 @@ java -ea ${java-file}
 Where:
 
 * `${java-file}` is the Java file you want to execute
+
+
+### Simple Algortithms
 
 
 * [Find Palindrome](http://josdem.io/techtalk/algorithms/simple/#Palindrome)
