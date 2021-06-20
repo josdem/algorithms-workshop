@@ -15,8 +15,10 @@ public class Sorter {
   public int[] sort(int[] array) {
     IntStream.range(0, array.length)
         .filter(element -> array[element] % 2 != 0)
-        .mapToObj(index -> array[index])
-        .forEach(System.out::println);
+        .mapToObj(index -> index)
+        .forEach(index -> treeMap.put(array[index], index));
+
+    treeMap.forEach((k, v) -> System.out.println("k: " + k + " v: " + v));
     return array;
   }
 }
