@@ -1,6 +1,12 @@
 Simple Algorithms
 ---------------------------------------------
 
+#### To run some examples using [Gradle](https://gradle.org/)
+
+```bash
+gradle test
+```
+
 * [Find Palindrome](http://josdem.io/techtalk/algorithms/simple/#Palindrome)
 * [Biggest Number](http://josdem.io/techtalk/algorithms/simple/#Biggest_Number)
 * [Sum a Collection](http://josdem.io/techtalk/algorithms/simple/#Sum_a_Collection)
