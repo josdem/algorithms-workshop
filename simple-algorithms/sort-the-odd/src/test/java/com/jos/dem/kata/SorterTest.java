@@ -21,4 +21,12 @@ class SorterTest {
   void shouldSortAnEmptyArray() {
     assertArrayEquals(new int[] {}, sorter.sort(new int[] {}), "should sort an empty array");
   }
+
+  @Test
+  @DisplayName("Sort duplicated elements in array")
+  void shouldSortDuplicatedElementsArray() {
+    assertArrayEquals(
+        new int[] {1, 1, 5, 11, 2, 11, 111, 0},
+        sorter.sort(new int[] {1, 111, 11, 11, 2, 1, 5, 0}));
+  }
 }
