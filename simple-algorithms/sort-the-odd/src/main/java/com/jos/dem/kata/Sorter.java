@@ -4,21 +4,28 @@ package com.jos.dem.kata;
 You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
  */
 
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Sorter {
 
-  private final Map<Integer, Integer> treeMap = new TreeMap<>();
-
   public int[] sort(int[] array) {
+    final Set<Integer> indexSet = new TreeSet<>();
+    final Set<Integer> valueSet = new TreeSet<>();
+
     IntStream.range(0, array.length)
         .filter(element -> array[element] % 2 != 0)
         .mapToObj(index -> index)
-        .forEach(index -> treeMap.put(array[index], index));
+        .forEach(
+            index -> {
+              indexSet.add(index);
+              valueSet.add(array[index]);
+            });
 
-    treeMap.forEach((k, v) -> System.out.println("k: " + k + " v: " + v));
+    List<Integer> indexes = indexSet.stream().collect(Collectors.toList());
+    List<Integer> values = valueSet.stream().collect(Collectors.toList());
+    IntStream.range(0, indexes.size()).forEach(i -> array[indexes.get(i)] = values.get(i));
     return array;
   }
 }
