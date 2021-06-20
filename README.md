@@ -7,6 +7,18 @@ Simple Algorithms
 gradle test
 ```
 
+#### To run some examples using Java
+
+```bash
+javac ${java-file}
+java -ea ${java-file}
+```
+
+Where:
+
+* `${java-file}` is the Java file you want to execute
+
+
 * [Find Palindrome](http://josdem.io/techtalk/algorithms/simple/#Palindrome)
 * [Biggest Number](http://josdem.io/techtalk/algorithms/simple/#Biggest_Number)
 * [Sum a Collection](http://josdem.io/techtalk/algorithms/simple/#Sum_a_Collection)
