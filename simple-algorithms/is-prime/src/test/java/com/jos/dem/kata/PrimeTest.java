@@ -30,4 +30,17 @@ public class PrimeTest {
     assertTrue(primeEvaluator.isPrime(41), "41 is prime");
     assertTrue(primeEvaluator.isPrime(5099), "5099 is prime");
   }
+
+  @Test
+  @DisplayName("Test no prime")
+  void shouldVerifyNoPrime() {
+    assertFalse(primeEvaluator.isPrime(4), "4 is not prime");
+    assertFalse(primeEvaluator.isPrime(6), "6 is not prime");
+    assertFalse(primeEvaluator.isPrime(8), "8 is not prime");
+    assertFalse(primeEvaluator.isPrime(9), "9 is not prime");
+    assertFalse(primeEvaluator.isPrime(45), "45 is not prime");
+    assertFalse(primeEvaluator.isPrime(-5), "-5 is not prime");
+    assertFalse(primeEvaluator.isPrime(-8), "-8 is not prime");
+    assertFalse(primeEvaluator.isPrime(-41), "-41 is not prime");
+  }
 }
