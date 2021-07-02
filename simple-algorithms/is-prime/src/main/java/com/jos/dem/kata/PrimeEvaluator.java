@@ -13,6 +13,7 @@ public class PrimeEvaluator {
             && number / number == 1
             && number % 5 != 0
             && number % 3 != 0)
-        || number == 3;
+        || number == 3
+        || number == 5;
   }
 }
