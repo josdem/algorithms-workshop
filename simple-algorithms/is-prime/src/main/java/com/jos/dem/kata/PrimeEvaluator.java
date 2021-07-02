@@ -8,6 +8,11 @@ Per Wikipedia, a prime number (or a prime) is a natural number greater than 1 th
 public class PrimeEvaluator {
 
   public boolean isPrime(int number) {
-    return number > 1 && number % 1 == 0 && number / number == 1 && number % 5 != 0;
+    return (number > 1
+            && number % 1 == 0
+            && number / number == 1
+            && number % 5 != 0
+            && number % 3 != 0)
+        || number == 3;
   }
 }
