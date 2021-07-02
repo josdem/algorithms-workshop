@@ -3,7 +3,5 @@
 **swo
 **.idea
 **.iml
-**gradle/
-**gradlew
-**gradlew.bat
 **build
+**.gradle
