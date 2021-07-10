@@ -1,5 +1,7 @@
 package com.jos.dem.kata;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /*
@@ -13,13 +15,12 @@ Note: for this kata y isn't considered a vowel.
 public class VowelTrollRemover {
 
   public String remove(String keyword) {
+    List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
+
     return keyword
         .chars()
         .mapToObj(ch -> (char) ch)
-        .filter(
-            ch ->
-                ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u' && ch != 'A'
-                    && ch != 'E' && ch != 'I' && ch != 'O' && ch != 'U')
+        .filter(ch -> !vowels.contains(ch))
         .map(ch -> ch.toString())
         .collect(Collectors.joining());
   }
