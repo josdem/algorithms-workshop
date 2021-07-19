@@ -6,7 +6,7 @@ There will always be only one integer that appears an odd number of times.
  */
 
 public class OddFinder {
-  public static int findIt(int[] array) {
+  public int findIt(int[] array) {
     return 0;
   }
 }
