@@ -38,7 +38,6 @@ Where:
 * [Birthday Cake Candles](http://josdem.io/techtalk/algorithms/simple/#Birthday_Cake_Candles)
 * [Breaking The Records](http://josdem.io/techtalk/algorithms/simple/#Breaking_Records)
 * [String Compressor](http://josdem.io/techtalk/algorithms/simple/#String_Compressor)
-* [Bon Appetit](http://josdem.io/techtalk/algorithms/simple/#Bon_Appetit)
 * [Sock Merchant](http://josdem.io/techtalk/algorithms/simple/#Sock_Merchant)
 * [Electronics Shop](http://josdem.io/techtalk/algorithms/simple/#Electronics_Shop)
 
