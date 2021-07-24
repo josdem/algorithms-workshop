@@ -11,8 +11,9 @@ class CandleCounterTest {
   private CandleCounter candleCounter = new CandleCounter();
 
   @Test
-  @DisplayName("Get difference")
-  void shouldGetDifferenceInArrays() {
+  @DisplayName("Keep biggest candles")
+  void shouldKeepBiggestCandles() {
     assertEquals(Arrays.asList(3, 3), candleCounter.count(Arrays.asList(3, 2, 1, 3)));
+    assertEquals(Arrays.asList(1), candleCounter.count(Arrays.asList(1)));
   }
 }
