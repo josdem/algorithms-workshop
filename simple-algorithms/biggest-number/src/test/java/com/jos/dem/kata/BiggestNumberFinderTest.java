@@ -13,8 +13,8 @@ class BiggestNumberFinderTest {
   @Test
   @DisplayName("Find biggest")
   void shouldFindBiggestNumber() {
-    assertEquals(32, biggestNumberFinder.find(Arrays.asList("hi", "2", "@#$%", "32")));
-    assertEquals(-10, biggestNumberFinder.find(Arrays.asList("pair", "car", "-10")));
-    assertEquals(3.1416, biggestNumberFinder.find(Arrays.asList("main", "3.1416", "yaml")));
+    assertEquals(32.0, biggestNumberFinder.find(Arrays.asList("hi", "2.0", "@#$%", "32.0")));
+    assertEquals(-10.0, biggestNumberFinder.find(Arrays.asList("pair", "car", "-10.0")));
+    assertEquals(3.14, biggestNumberFinder.find(Arrays.asList("main", "3.14", "yaml")));
   }
 }
