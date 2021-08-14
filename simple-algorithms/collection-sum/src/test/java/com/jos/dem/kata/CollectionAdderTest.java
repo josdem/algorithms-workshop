@@ -15,7 +15,7 @@ class CollectionAdderTest {
     @DisplayName("Accumulating a collection")
     void shouldSumCollection() {
         assertEquals(31, collectionAdder.sum(Arrays.asList(1, 2, 3, 4, 10, 11)));
-        assertEquals(31, collectionAdder.sum(Arrays.asList(5, 4, 1, 2, 9)));
+        assertEquals(21, collectionAdder.sum(Arrays.asList(5, 4, 1, 2, 9)));
     }
 
 }

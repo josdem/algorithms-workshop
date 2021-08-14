@@ -5,6 +5,6 @@ import java.util.List;
 public class CollectionAdder {
 
     public int sum(List<Integer> numbers) {
-        return numbers.size();
+        return numbers.stream().reduce(0, Integer::sum);
     }
 }
