@@ -1,5 +1,9 @@
 package com.jos.dem.kata;
 
+/*
+Given an integer collection return a sum of its elements
+ */
+
 import java.util.List;
 
 public class CollectionAdder {
