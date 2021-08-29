@@ -24,16 +24,11 @@ Where:
 ### Simple Algortithms
 
 
-* [Find Palindrome](http://josdem.io/techtalk/algorithms/simple/#Palindrome)
-* [Biggest Number](http://josdem.io/techtalk/algorithms/simple/#Biggest_Number)
 * [Sum a Collection](http://josdem.io/techtalk/algorithms/simple/#Sum_a_Collection)
-* [Staircase](http://josdem.io/techtalk/algorithms/simple/#Staircase)
+* [Biggest Number](http://josdem.io/techtalk/algorithms/simple/#Biggest_Number)
 * [Most Popular in the array](http://josdem.io/techtalk/algorithms/simple/#Most_Popular_in_the_Array)
-* [Center Point in 2d Array](http://josdem.io/techtalk/algorithms/simple/#Center_Point_in_2d_Array)
-* [Power Set](http://josdem.io/techtalk/algorithms/simple/#Power_Set)
-* [Collection Adder](http://josdem.io/techtalk/algorithms/simple/#Collection_Adder)
 * [Common Elements in two Collections](http://josdem.io/techtalk/algorithms/simple/#Common_Elements_in_two_Collections)
-* [Plus Minus](http://josdem.io/techtalk/algorithms/simple/#Plus_Minus)
+* [Number Counter](http://josdem.io/techtalk/algorithms/simple/#Number_Counter)
 * [Min-Max Sum](http://josdem.io/techtalk/algorithms/simple/#Min_Max_Sum)
 * [Birthday Cake Candles](http://josdem.io/techtalk/algorithms/simple/#Birthday_Cake_Candles)
 * [String Compressor](http://josdem.io/techtalk/algorithms/simple/#String_Compressor)
