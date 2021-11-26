@@ -16,4 +16,8 @@ public class CharactersCounter {
         List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u');
         return (int) keyword.chars().filter(ch -> vowels.contains((char)ch)).count();
     }
+
+    public int countConsonants(String keyword) {
+        return keyword.length();
+    }
 }
