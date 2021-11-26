@@ -15,6 +15,6 @@ class CharactersCounterTest {
 
   @Test
   void shouldCountConsonants() {
-    assertEquals(2, charactersCounter.countConsonants("josdem"));
+    assertEquals(4, charactersCounter.countConsonants("josdem"));
   }
 }
