@@ -7,10 +7,15 @@ Then: Write a function to find out how many pairs you can get.
  */
 
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 class SockPairFinder {
 
-    public int findPairsBy(List<Integer> colors) {
-        return colors.size();
-    }
+  public int findPairsBy(List<Integer> colors) {
+    Map<Integer, Long> map =
+        colors.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+    return colors.size();
+  }
 }
