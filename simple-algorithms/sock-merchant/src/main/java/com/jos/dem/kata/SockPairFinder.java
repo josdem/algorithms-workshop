@@ -16,6 +16,11 @@ class SockPairFinder {
   public int findPairsBy(List<Integer> colors) {
     Map<Integer, Long> map =
         colors.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+    List<Long> values =
+        map.entrySet().stream()
+            .map(Map.Entry::getValue)
+            .filter(it -> it / 2 > 0)
+            .collect(Collectors.toList());
     return colors.size();
   }
 }
