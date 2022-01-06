@@ -20,6 +20,6 @@ public class ShopCalculator {
 
     final List<Integer> prices =
         pairs.stream().map(entry -> entry.getKey() + entry.getValue()).collect(Collectors.toList());
-    return amount + keyboards.size() + usbs.size();
+    return prices.stream().filter(it -> it <= amount).max(Integer::compare).get();
   }
 }
