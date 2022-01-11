@@ -22,6 +22,6 @@ class SquareCalculatorTest {
   @DisplayName("it square my list")
   void shouldSquareList() {
     List<Integer> numbers = Arrays.asList(1, 2, 3, 7, 9, 12, 15);
-    assertEquals(Arrays.asList(1, 4, 9, 49, 81, 224, 330), squareCalculator.square(numbers));
+    assertEquals(Arrays.asList(1, 4, 9, 49, 81, 144, 225), squareCalculator.square(numbers));
   }
 }
