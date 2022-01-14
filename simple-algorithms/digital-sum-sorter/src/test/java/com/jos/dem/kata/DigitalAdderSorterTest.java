@@ -5,6 +5,7 @@ Given: A numeric collection
 When: I call add and sort method
 Then: I will get a collection with every element summing its digits and sorted
  */
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
