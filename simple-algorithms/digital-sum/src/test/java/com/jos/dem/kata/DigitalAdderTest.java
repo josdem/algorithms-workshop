@@ -18,8 +18,8 @@ public class DigitalAdderTest {
   private DigitalAdder digitalAdder = new DigitalAdder();
 
   @Test
-  @DisplayName("it sum every element in the collection and sort them")
-  void shouldAddAndSort() {
+  @DisplayName("it sum every element in the collection")
+  void shouldSumCollection() {
     List<Integer> numbers = Arrays.asList(15, 20, 4, 8);
     List<Integer> expectedCollection = Arrays.asList(6, 2, 4, 8);
     assertEquals(expectedCollection, digitalAdder.add(numbers));
