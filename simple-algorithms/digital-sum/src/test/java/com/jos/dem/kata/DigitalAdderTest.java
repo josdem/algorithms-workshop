@@ -14,7 +14,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DigitalAdderSorterTest {
+public class DigitalAdderTest {
   private DigitalAdder digitalAdder = new DigitalAdder();
 
   @Test
