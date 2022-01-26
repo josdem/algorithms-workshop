@@ -19,13 +19,13 @@ class CharacterCounterTest {
   @DisplayName("it counts m character")
   void shouldCountLastCharacter() {
     String keyword = "josdem";
-    assertEquals(1, characterCounter.count(keyword));
+    assertEquals(1, characterCounter.count(keyword, 'm'));
   }
 
   @Test
   @DisplayName("it counts three times target character")
   void shouldCountThreeCharacters() {
     String keyword = "Alabama";
-    assertEquals(3, characterCounter.count(keyword));
+    assertEquals(3, characterCounter.count(keyword, 'a'));
   }
 }
