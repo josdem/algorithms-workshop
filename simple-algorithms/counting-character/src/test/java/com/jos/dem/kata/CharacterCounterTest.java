@@ -13,19 +13,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CharacterCounterTest {
 
-    private CharacterCounter characterCounter = new CharacterCounter();
+  private CharacterCounter characterCounter = new CharacterCounter();
 
-    @Test
-    @DisplayName("it counts m character")
-    void shouldCountLastCharacter(){
-        String keyword = "josdem";
+  @Test
+  @DisplayName("it counts m character")
+  void shouldCountLastCharacter() {
+    String keyword = "josdem";
     assertEquals(1, characterCounter.count(keyword));
-    }
+  }
 
-    @Test
-    @DisplayName("it counts three times target character")
-    void shouldCountThreeCharacters(){
-        String keyword = "Alabama";
-        assertEquals(3, characterCounter.count(keyword));
-    }
+  @Test
+  @DisplayName("it counts three times target character")
+  void shouldCountThreeCharacters() {
+    String keyword = "Alabama";
+    assertEquals(3, characterCounter.count(keyword));
+  }
 }
