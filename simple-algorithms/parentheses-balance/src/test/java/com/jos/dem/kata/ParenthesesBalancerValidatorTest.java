@@ -1,5 +1,12 @@
 package com.jos.dem.kata;
 
+/**
+ *  Given a string and returns a boolean
+ *  When I call isBalanced method
+ *  Then Return a boolean indicating whether that string has balanced parentheses.
+ */
+
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
