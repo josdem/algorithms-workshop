@@ -11,9 +11,8 @@ public class FastManFinder {
     private final List result = new ArrayList<String>();
 
     public String find(String string) {
-        StringBuilder sb = new StringBuilder(string);
-        IntStream.range(0, sb.length()).forEach(index -> {
-            String right = sb.substring(0, index);
+        IntStream.range(0, string.length()).forEach(index -> {
+            String right = string.substring(0, index);
             if (Arrays.asList(dictionary).contains(right)) {
                 result.add(right);
             }
@@ -23,9 +22,8 @@ public class FastManFinder {
     }
 
     private void reverseFind(String string) {
-        StringBuilder sb = new StringBuilder(string);
         IntStream.range(0, string.length()).map(it -> 0 - it + string.length() - 1).forEach(index -> {
-            String reverse = sb.substring(index, string.length());
+            String reverse = string.substring(index);
             if (Arrays.asList(dictionary).contains(reverse)) {
                 result.add(reverse);
             }
