@@ -5,7 +5,6 @@ Given A string with no spaces
 And a source dictionary as words in an array
 When I call to find method
 Then I validate expected words are found
-Note: Consider an empty string or null as inputs
  */
 
 import org.junit.jupiter.api.DisplayName;
