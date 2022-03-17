@@ -9,24 +9,27 @@ public class FastManFinder {
 
     private final String[] dictionary = new String[]{"fast", "fat", "man", "strong"};
     private final List result = new ArrayList<String>();
+    private String string = null;
 
     public String find(String string) {
+        this.string = string;
         IntStream.range(0, string.length()).forEach(index -> {
-            String right = string.substring(0, index);
-            if (Arrays.asList(dictionary).contains(right)) {
-                result.add(right);
-            }
+            evaluateWord(0, index);
         });
-        reverseFind(string);
+        reverseFind();
         return String.join(" ", result);
     }
 
-    private void reverseFind(String string) {
+    private void reverseFind() {
         IntStream.range(0, string.length()).map(it -> 0 - it + string.length() - 1).forEach(index -> {
-            String reverse = string.substring(index);
-            if (Arrays.asList(dictionary).contains(reverse)) {
-                result.add(reverse);
-            }
+            evaluateWord(index, string.length());
         });
+    }
+
+    private void evaluateWord(int from, int to) {
+        String word = string.substring(from, to);
+        if (Arrays.asList(dictionary).contains(word)) {
+            result.add(word);
+        }
     }
 }
