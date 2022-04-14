@@ -1,5 +1,12 @@
 package com.josdem.challenge
 
+/*
+Given A string with no spaces
+And a source dictionary as words in an array
+When I call to find method
+Then I validate expected words are found
+ */
+
 import spock.lang.Specification
 
 class FastManFinderSpec extends Specification {
