@@ -1,4 +1,4 @@
-package com.jos.dem.challenge;
+package com.josdem.challenge;
 
 /*
 Given A string with no spaces
