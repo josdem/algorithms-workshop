@@ -1,4 +1,4 @@
-package com.jos.dem.challenge;
+package com.josdem.challenge;
 
 import java.util.ArrayList;
 import java.util.Arrays;
