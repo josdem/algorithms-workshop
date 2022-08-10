@@ -30,9 +30,14 @@ class OddOrEvenTest {
     }
 
     @Test
-    @DisplayName("Evaluate is odd when empty or null string")
-    void shouldValidateIsOddWhenEmpty(){
+    @DisplayName("Evaluate is odd when null")
+    void shouldValidateIsOddWhenNull(){
         assertFalse(oddOrEven.isEven(null));
+    }
+
+    @Test
+    @DisplayName("Evaluate is odd when empty string")
+    void shouldValidateIsOddWhenEmpty(){
         assertFalse(oddOrEven.isEven(""));
     }
 }
