@@ -13,6 +13,12 @@ class CountingUppercaseTest {
   private UppercaseCounter uppercaseCounter = new UppercaseCounter();
 
   @Test
+  @DisplayName("count three uppercase")
+  void shouldCountThreeUppercase() {
+    assertEquals(3, uppercaseCounter.count("JNfvHibuq"), "should count three uppercase");
+  }
+
+  @Test
   @DisplayName("count seven uppercase")
   void shouldCountSevenUppercase() {
     assertEquals(7, uppercaseCounter.count("SEKWdgPxTV"), "should count seven uppercase");
