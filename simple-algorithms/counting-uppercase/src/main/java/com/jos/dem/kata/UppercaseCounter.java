@@ -7,6 +7,6 @@ public class UppercaseCounter {
   }
 
   public boolean hasSpace(String message) {
-    return false;
+    return message.contains(" ");
   }
 }
