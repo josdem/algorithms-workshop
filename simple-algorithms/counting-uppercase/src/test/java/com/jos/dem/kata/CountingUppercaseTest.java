@@ -1,8 +1,11 @@
 package com.jos.dem.kata;
 
 /**
- * Given A string When we call count uppercase method Then I count how many characters are uppercase
+ * Given A string
+ * When we call count uppercase method
+ * Then I count how many characters are uppercase
  */
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
