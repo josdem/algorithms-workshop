@@ -1,5 +1,6 @@
 package com.jos.dem.kata;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class SmallerBiggestFinder {
