@@ -4,6 +4,8 @@ import java.util.List;
 
 public class SmallerBiggestFinder {
     public List<Integer> find(List<Integer> numbers) {
-        return numbers;
+        Integer smaller = numbers.stream().reduce((a, b) -> a < b ? a : b).get();
+        Integer biggest = numbers.stream().reduce((a, b) -> a > b ? a : b).get();
+        return Arrays.asList(smaller, biggest);
     }
 }
