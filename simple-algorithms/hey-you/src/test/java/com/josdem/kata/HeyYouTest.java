@@ -28,7 +28,7 @@ class HeyYouTest {
     @Test
     @DisplayName("having a zeros")
     void shouldFindAZero(){
-        List<Integer> numbers = Arrays.asList(1,0,3,0,5,0,7,0);
+        List<Integer> numbers = Arrays.asList(1,0,3,0,5,0);
         assertEquals(Arrays.asList("Hey", "you!", "Hey", "you!", "Hey", "you!"), converter.find(numbers));
     }
 

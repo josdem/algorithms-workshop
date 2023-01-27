@@ -6,6 +6,14 @@ import java.util.List;
 public class HeyYou {
 
     public List<String> find(List<Integer> numbers){
-        return new ArrayList<>();
+        List<String> result = new ArrayList<>();
+        numbers.forEach(n -> {
+            if(n == 0){
+                result.add("you!");
+            } else {
+                result.add("Hey");
+            }
+        });
+        return result;
     }
 }
