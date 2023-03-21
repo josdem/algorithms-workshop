@@ -20,22 +20,22 @@ class HeyYouTest {
 
     @Test
     @DisplayName("not having any zero")
-    void shouldNotFindAnyZero(){
-        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9);
-        assertEquals(Arrays.asList("Hey", "Hey", "Hey", "Hey", "Hey", "Hey", "Hey", "Hey" ,"Hey"), converter.find(numbers));
+    void shouldNotFindAnyZero() {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        assertEquals(Arrays.asList("Hey", "Hey", "Hey", "Hey", "Hey", "Hey", "Hey", "Hey", "Hey"), converter.find(numbers));
     }
 
     @Test
     @DisplayName("having a zeros")
-    void shouldFindAZero(){
-        List<Integer> numbers = Arrays.asList(1,0,3,0,5,0);
+    void shouldFindAZero() {
+        List<Integer> numbers = Arrays.asList(1, 0, 3, 0, 5, 0);
         assertEquals(Arrays.asList("Hey", "you!", "Hey", "you!", "Hey", "you!"), converter.find(numbers));
     }
 
     @Test
     @DisplayName("having a reverse hello")
-    void shouldFindReverseHello(){
-        List<Integer> numbers = Arrays.asList(0,1);
+    void shouldFindReverseHello() {
+        List<Integer> numbers = Arrays.asList(0, 1);
         assertEquals(Arrays.asList("you!", "Hey"), converter.find(numbers));
     }
 }
