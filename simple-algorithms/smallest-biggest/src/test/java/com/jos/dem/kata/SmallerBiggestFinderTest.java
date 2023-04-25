@@ -8,6 +8,13 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+Find smaller and biggest numbers in a collection
+Given: A collection like [7, 5, 2, 4, 3, 9]
+When: I call the find method
+Then: I will get a collection with [2, 9] values
+ */
+
 class SmallerBiggestFinderTest {
     private SmallerBiggestFinder biggestSmallerFinder = new SmallerBiggestFinder();
 
