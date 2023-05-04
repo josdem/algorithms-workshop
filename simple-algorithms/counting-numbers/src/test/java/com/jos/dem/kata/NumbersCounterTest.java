@@ -3,7 +3,9 @@ package com.jos.dem.kata;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /*
 Given an integer collection, return an array with three elements:
@@ -18,6 +20,6 @@ class NumbersCounterTest {
     @Test
     @DisplayName("Counting numbers")
     void shouldCountNumbers() {
-        assertArrayEquals(new int[]{3, 2, 1}, numbersCounter.count(new int[]{-4, 3, -9, 0, 4, 1}));
+        assertEquals(Arrays.asList(3, 2, 1), numbersCounter.count(Arrays.asList(-4, 3, -9, 0, 4, 1)));
     }
 }
