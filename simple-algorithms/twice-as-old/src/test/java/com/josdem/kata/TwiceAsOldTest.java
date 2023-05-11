@@ -8,6 +8,12 @@ import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Given dad and son years old
+ * When I call compute method
+ * Then I will get how many years ago the father was twice as old as his son
+ */
+
 class TwiceAsOldTest {
 
   private TwiceAsOld twiceAsOld = new TwiceAsOld();
