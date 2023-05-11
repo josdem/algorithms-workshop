@@ -8,13 +8,20 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class BiggestSmallerFinderTest {
-  private SmallerBiggestFinder biggestSmallerFinder = new SmallerBiggestFinder();
+/*
+Find smaller and biggest numbers in a collection
+Given: A collection like [7, 5, 2, 4, 3, 9]
+When: I call the find method
+Then: I will get a collection with [2, 9] values
+ */
 
-  @Test
-  @DisplayName("It finds smallest and biggest values")
-  void shouldFindBiggestAndSmaller() {
-    List<Integer> numbers = Arrays.asList(7, 5, 2, 4, 3, 9);
-    assertEquals(Arrays.asList(2, 9), biggestSmallerFinder.find(numbers));
-  }
+class SmallerBiggestFinderTest {
+    private SmallerBiggestFinder biggestSmallerFinder = new SmallerBiggestFinder();
+
+    @Test
+    @DisplayName("It finds smallest and biggest values")
+    void shouldFindBiggestAndSmaller() {
+        List<Integer> numbers = Arrays.asList(7, 5, 2, 4, 3, 9);
+        assertEquals(Arrays.asList(2, 9), biggestSmallerFinder.find(numbers));
+    }
 }

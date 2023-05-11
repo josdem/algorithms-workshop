@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+def junitJupiterVersion = '5.9.0'
+
+group 'com.josdem.kata'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
+}
+
+test {
+    useJUnitPlatform()
+}

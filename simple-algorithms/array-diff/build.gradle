@@ -1,9 +1,8 @@
 plugins {
     id 'java'
-    id 'com.github.sherter.google-java-format' version '0.9'
 }
 
-def junitJupiterVersion = '5.7.0'
+def junitJupiterVersion = '5.9.0'
 
 group 'com.jos.dem.kata'
 version '1.0-SNAPSHOT'
@@ -20,5 +19,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-test.dependsOn rootProject.tasks['googleJavaFormat']

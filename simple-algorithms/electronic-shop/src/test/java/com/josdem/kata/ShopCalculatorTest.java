@@ -1,4 +1,4 @@
-package com.jos.dem.kata;
+package com.josdem.kata;
 
 /*
 Monica wants to buy exactly one keyboard and one USB drive from her favorite electronics store.
@@ -21,14 +21,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ShopCalculatorTest {
 
-  private ShopCalculator shopCalculator = new ShopCalculator();
+    private ShopCalculator shopCalculator = new ShopCalculator();
 
-  @Test
-  @DisplayName("it get biggest electronic pair spend")
-  void shouldGetBiggestElectronicPairSpend() {
-    Integer amount = 10;
-    List<Integer> usbs = Arrays.asList(5, 2, 8);
-    List<Integer> keyboards = Arrays.asList(3, 1);
-    assertEquals(9, shopCalculator.compute(amount, keyboards, usbs));
-  }
+    @Test
+    @DisplayName("it get biggest electronic pair spend")
+    void shouldGetBiggestElectronicPairSpend() {
+        Integer amount = 10;
+        List<Integer> usbs = Arrays.asList(5, 2, 8);
+        List<Integer> keyboards = Arrays.asList(3, 1);
+        assertEquals(9, shopCalculator.compute(amount, keyboards, usbs));
+    }
 }

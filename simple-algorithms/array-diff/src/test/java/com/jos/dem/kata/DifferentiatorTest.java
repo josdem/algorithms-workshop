@@ -1,5 +1,10 @@
 package com.jos.dem.kata;
 
+/*
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+It should remove all values from list a, which are present in list b keeping their order.
+ */
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.DisplayName;
