@@ -6,12 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Given A string
- * When I call compute method
- * Then I should have the longest substring or subset within the string
- * Note: if input is "abcabcbb"s then the longest substring is abc and the length of that would be 3
+ * Given A string When I call compute method Then I should have the longest substring or subset
+ * within the string Note: if input is "abcabcbb"s then the longest substring is abc and the length
+ * of that would be 3
  */
-
 class LongestSubstringTest {
 
   private final LongestSubstring longestSubstring = new LongestSubstring();
