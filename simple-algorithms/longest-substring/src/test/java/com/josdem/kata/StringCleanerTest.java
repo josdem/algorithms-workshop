@@ -6,32 +6,37 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Given A string When I call compute method Then I should have the longest substring or subset
- * within the string Note: if input is "abcabcbb"s then the longest substring is abc and the length
- * of that would be 3
+ * Given A string
+ * When I call reduce method
+ * Then I should have the length of a new string without repeated characters
+ *
+ * Examples:
+ * 1. abcabcbb -> abc = 3
+ * 2. bbbbb -> b = 1
+ * 3. ABDEFGABEF -> BDEFGA = 6
  */
-class LongestSubstringTest {
+class StringCleanerTest {
 
-  private final LongestSubstring longestSubstring = new LongestSubstring();
+  private final StringCleaner longestSubstring = new StringCleaner();
 
   @Test
   @DisplayName("finding longest substring from abcabcbb")
   void shouldFindLongestSubstringOne() {
     String data = "abcabcbb";
-    assertEquals(3, longestSubstring.compute(data), "Longest SubString would be 3");
+    assertEquals(3, longestSubstring.reduce(data), "Longest substring would be 3");
   }
 
   @Test
   @DisplayName("finding longest Substring from bbbbb")
   void shouldFindLongestSubstringTwo() {
     String data = "bbbbb";
-    assertEquals(1, longestSubstring.compute(data), "Longest SubString would be 1");
+    assertEquals(1, longestSubstring.reduce(data), "Longest substring would be 1");
   }
 
   @Test
   @DisplayName("find longest Substring for ABDEFGABEF")
   void shouldFindLongestSubstringThree() {
     String data = "ABDEFGABEF";
-    assertEquals(6, longestSubstring.compute(data), "Longest SubString would be 6");
+    assertEquals(6, longestSubstring.reduce(data), "Longest substring would be 6");
   }
 }
