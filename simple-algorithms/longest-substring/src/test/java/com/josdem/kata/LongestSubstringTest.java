@@ -15,28 +15,28 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 2. bbbbb -> b = 1
  * 3. ABDEFGABEF -> BDEFGA = 6
  */
-class StringCleanerTest {
+class LongestSubstringTest {
 
-  private final StringCleaner stringCleaner = new StringCleaner();
+  private final LongestSubstring longestSubstring = new LongestSubstring();
 
   @Test
   @DisplayName("finding longest substring from abcabcbb")
   void shouldFindLongestSubstringOne() {
     String data = "abcabcbb";
-    assertEquals(3, stringCleaner.reduce(data), "Longest substring would be 3");
+    assertEquals(3, longestSubstring.reduce(data), "Longest substring would be 3");
   }
 
   @Test
   @DisplayName("finding longest Substring from bbbbb")
   void shouldFindLongestSubstringTwo() {
     String data = "bbbbb";
-    assertEquals(1, stringCleaner.reduce(data), "Longest substring would be 1");
+    assertEquals(1, longestSubstring.reduce(data), "Longest substring would be 1");
   }
 
   @Test
   @DisplayName("find longest Substring for ABDEFGABEF")
   void shouldFindLongestSubstringThree() {
     String data = "ABDEFGABEF";
-    assertEquals(6, stringCleaner.reduce(data), "Longest substring would be 6");
+    assertEquals(6, longestSubstring.reduce(data), "Longest substring would be 6");
   }
 }

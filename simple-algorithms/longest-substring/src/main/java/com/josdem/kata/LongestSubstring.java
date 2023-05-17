@@ -1,7 +1,6 @@
 package com.josdem.kata;
 
-public class StringCleaner {
-
+public class LongestSubstring {
   public int reduce(String data) {
     return data.length();
   }
