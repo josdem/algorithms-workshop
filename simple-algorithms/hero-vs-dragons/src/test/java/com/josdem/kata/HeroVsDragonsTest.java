@@ -19,14 +19,14 @@ class HeroVsDragonsTest {
 
     @Test
     @DisplayName("returns true when hero wins")
-    void shouldReturnTrueWhenHeroWins(){
+    void shouldReturnTrueWhenHeroWins() {
         assertTrue(heroVsDragons.fight(10, 5), "With 10 bullets and 5 dragons, hero should win");
         assertTrue(heroVsDragons.fight(100, 40), "With 100 bullets and 40 dragons, hero should win");
     }
 
     @Test
     @DisplayName("returns false when hero loses")
-    void shouldReturnFalseWhenHeroLoses(){
-        assertFalse(heroVsDragons.fight(1706635620, 1391914725 ), "With 1706635620 bullets and 1391914725 dragons, hero should lose");
+    void shouldReturnFalseWhenHeroLoses() {
+        assertFalse(heroVsDragons.fight(1706635620, 1391914725), "With 1706635620 bullets and 1391914725 dragons, hero should lose");
     }
 }
