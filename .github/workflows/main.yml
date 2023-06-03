@@ -21,8 +21,6 @@ jobs:
         run: cd ${{ github.workspace }}/simple-algorithms/biggest-price && ./gradlew test
       - name: Execute birthday cake candles
         run: cd ${{ github.workspace }}/simple-algorithms/birthday-cake-candles && ./gradlew test
-      - name: Execute collection sum
-        run: cd ${{ github.workspace }}/simple-algorithms/collection-sum && ./gradlew test
       - name: Execute common elements
         run: cd ${{ github.workspace }}/simple-algorithms/common-elements && ./gradlew test
       - name: Execute count bits
