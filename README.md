@@ -1,6 +1,8 @@
 Algorithms Workshop
 ---------------------------------------------
 
+[![GitHub](https://github.com/josdem/algorithms-workshop/actions/workflows/github-actions.yml/badge.svg)](https://github.com/josdem/algorithms-workshop/actions)
+
 ### Instructions
 
 #### To run some examples using [Gradle](https://gradle.org/)
