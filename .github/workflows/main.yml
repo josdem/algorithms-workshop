@@ -49,8 +49,6 @@ jobs:
         run: cd ${{ github.workspace }}/simple-algorithms/odd-or-even && ./gradlew test
       - name: Execute pair maker
         run: cd ${{ github.workspace }}/simple-algorithms/pair-maker && ./gradlew test
-      - name: Execute palindrome
-        run: cd ${{ github.workspace }}/simple-algorithms/palindrome && ./gradlew test
       - name: Execute parentheses balance
         run: cd ${{ github.workspace }}/simple-algorithms/parentheses-balance && ./gradlew test
       - name: Execute power set
