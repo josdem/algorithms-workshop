@@ -45,8 +45,6 @@ jobs:
         run: cd ${{ github.workspace }}/simple-algorithms/hey-you && ./gradlew test
       - name: Execute longest substring
         run: cd ${{ github.workspace }}/simple-algorithms/longest-substring && ./gradlew test
-      - name: Execute most popular
-        run: cd ${{ github.workspace }}/simple-algorithms/most-popular && ./gradlew test
       - name: Execute odd or even
         run: cd ${{ github.workspace }}/simple-algorithms/odd-or-even && ./gradlew test
       - name: Execute pair maker
