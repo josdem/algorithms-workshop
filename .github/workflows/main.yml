@@ -14,10 +14,6 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: ls ${{ github.workspace }}
-      - name: Move to simple algorithms directory
-        run: cd simple-algorithms
-      - name: Move to array diff directory
-        run: cd array-diff
-      - name: Run tests  
-        run: gradle test
+      - name: Execute array diff tests
+        run: cd simple-algorithms/array-diff && gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
