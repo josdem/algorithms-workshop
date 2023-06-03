@@ -1,7 +1,7 @@
 Algorithms Workshop
 ---------------------------------------------
 
-[![GitHub](https://github.com/josdem/algorithms-workshop/actions/workflows/github-actions.yml/badge.svg)](https://github.com/josdem/algorithms-workshop/actions)
+[![GitHub](https://github.com/josdem/algorithms-workshop/actions/workflows/main.yml/badge.svg)](https://github.com/josdem/algorithms-workshop/actions)
 
 ### Instructions
 
