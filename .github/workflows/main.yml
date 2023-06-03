@@ -18,5 +18,35 @@ jobs:
       - name: Execute array diff tests
         run: cd ${{ github.workspace }}/simple-algorithms/array-diff && ./gradlew test
       - name: Execute biggest price tests
-        run: cd ${{ github.workspace }}/simple-algorithms/biggest-price && ./gradlew test  
+        run: cd ${{ github.workspace }}/simple-algorithms/biggest-price && ./gradlew test
+      - name: Execute birthday cake candles
+        run: cd ${{ github.workspace }}/simple-algorithms/birthday-cake-candles && ./gradlew test
+      - name: Execute collection sum
+        run: cd ${{ github.workspace }}/simple-algorithms/collection-sum && ./gradlew test
+      - name: Execute common elements
+        run: cd ${{ github.workspace }}/simple-algorithms/common-elements && ./gradlew test
+      - name: Execute count bits
+        run: cd ${{ github.workspace }}/simple-algorithms/count-bits && ./gradlew test
+      - name: Execute counting character
+        run: cd ${{ github.workspace }}/simple-algorithms/counting-character && ./gradlew test
+      - name: Execute counting characters
+        run: cd ${{ github.workspace }}/simple-algorithms/counting-characters && ./gradlew test
+      - name: Execute counting numbers
+        run: cd ${{ github.workspace }}/simple-algorithms/counting-numbers && ./gradlew test
+      - name: Execute counting uppercase
+        run: cd ${{ github.workspace }}/simple-algorithms/counting-uppercase && ./gradlew test
+      - name: Execute create phone number
+        run: cd ${{ github.workspace }}/simple-algorithms/create-phone-number && ./gradlew test
+      - name: Execute credit card mask
+        run: cd ${{ github.workspace }}/simple-algorithms/credit-card-mask && ./gradlew test
+      - name: Execute digital sum
+        run: cd ${{ github.workspace }}/simple-algorithms/digital-sum && ./gradlew test
+      - name: Execute disemvowel trolls
+        run: cd ${{ github.workspace }}/simple-algorithms/disemvowel-trolls && ./gradlew test
+      - name: Execute electronic shop
+        run: cd ${{ github.workspace }}/simple-algorithms/electronic-shop && ./gradlew test
+      - name: Execute find the odd
+        run: cd ${{ github.workspace }}/simple-algorithms/find-the-odd && ./gradlew test
+      - name: Execute first non repeated
+        run: cd ${{ github.workspace }}/simple-algorithms/first-non-repeated && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
