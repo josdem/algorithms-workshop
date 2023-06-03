@@ -51,6 +51,16 @@ jobs:
         run: cd ${{ github.workspace }}/simple-algorithms/pair-maker && ./gradlew test
       - name: Execute parentheses balance
         run: cd ${{ github.workspace }}/simple-algorithms/parentheses-balance && ./gradlew test
-      - name: Execute smallest biggest
-        run: cd ${{ github.workspace }}/simple-algorithms/smallest-biggest && ./gradlew test
+      - name: Execute sock merchant
+        run: cd ${{ github.workspace }}/simple-algorithms/sock-merchant && ./gradlew test
+      - name: Execute sort the odd
+        run: cd ${{ github.workspace }}/simple-algorithms/sort-the-odd && ./gradlew test
+      - name: Execute square calculator
+        run: cd ${{ github.workspace }}/simple-algorithms/square-calculator && ./gradlew test
+      - name: Execute string compressor
+        run: cd ${{ github.workspace }}/simple-algorithms/string-compressor && ./gradlew test
+      - name: Execute sum sets
+        run: cd ${{ github.workspace }}/simple-algorithms/sum-sets && ./gradlew test
+      - name: Execute twice as old
+        run: cd ${{ github.workspace }}/simple-algorithms/twice-as-old && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
