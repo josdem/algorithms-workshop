@@ -6,7 +6,7 @@ def junitJupiterVersion = '5.9.3'
 
 group 'com.jos.dem.kata'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = 17
 
 repositories {
     mavenCentral()
