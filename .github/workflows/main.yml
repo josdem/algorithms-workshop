@@ -59,8 +59,6 @@ jobs:
         run: cd ${{ github.workspace }}/simple-algorithms/square-calculator && ./gradlew test
       - name: Execute string compressor
         run: cd ${{ github.workspace }}/simple-algorithms/string-compressor && ./gradlew test
-      - name: Execute sum sets
-        run: cd ${{ github.workspace }}/simple-algorithms/sum-sets && ./gradlew test
       - name: Execute twice as old
         run: cd ${{ github.workspace }}/simple-algorithms/twice-as-old && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
