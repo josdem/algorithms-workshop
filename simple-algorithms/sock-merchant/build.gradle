@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.jos.dem.kata'
+group 'com.josdem.kata'
 version '1.0-SNAPSHOT'
 
 repositories {
