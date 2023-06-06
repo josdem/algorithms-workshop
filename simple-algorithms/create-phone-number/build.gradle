@@ -5,7 +5,7 @@ plugins {
 
 def junitJupiterVersion = "5.7.0"
 
-group 'com.jos.dem.kata'
+group 'com.josdem.kata'
 version '1.0-SNAPSHOT'
 
 repositories {
