@@ -7,6 +7,6 @@ public class LongestSubstring {
     public int reduce(String data) {
         List<String> substrings =
                 Arrays.stream(data.split("")).distinct().toList();
-        return substrings.size() > 0 ? substrings.size() : 1;
+        return !substrings.isEmpty() ? substrings.size() : 1;
     }
 }
