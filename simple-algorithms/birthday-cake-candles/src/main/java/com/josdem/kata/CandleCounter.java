@@ -1,4 +1,4 @@
-package com.jos.dem.kata;
+package com.josdem.kata;
 
 import java.util.List;
 

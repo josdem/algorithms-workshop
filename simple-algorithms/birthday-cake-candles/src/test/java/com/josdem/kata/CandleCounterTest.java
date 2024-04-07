@@ -1,4 +1,4 @@
-package com.jos.dem.kata;
+package com.josdem.kata;
 
 /*
 It is your birthday! And you want to make it special, so you want to keep only biggest candles in the cake
