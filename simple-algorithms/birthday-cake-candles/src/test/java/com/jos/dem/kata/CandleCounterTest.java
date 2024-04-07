@@ -7,7 +7,6 @@ Your task is to create a function that removes all small candles and just keep t
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.DisplayName;
