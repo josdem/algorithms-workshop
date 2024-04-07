@@ -21,7 +21,7 @@ class DifferentiatorTest {
     @DisplayName("Get difference")
     void shouldGetDifferenceInArrays() {
         assertEquals(List.of(2), differentiator.diff(List.of(1, 2), List.of(1)));
-        assertEquals(List.of(2, 2), differentiator.diff(List.of(1, 2), List.of(1)));
+        assertEquals(List.of(2, 2), differentiator.diff(List.of(1, 2, 2), List.of(1)));
         assertEquals(List.of(1), differentiator.diff(List.of(1, 2, 2), List.of(2)));
         assertEquals(List.of(1, 2, 2), differentiator.diff(List.of(1, 2, 2), new ArrayList<>()));
         assertEquals(new ArrayList<>(), differentiator.diff(new ArrayList<>(), List.of(1, 2)));
