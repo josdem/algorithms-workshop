@@ -6,9 +6,16 @@ import java.util.Arrays;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+/*
+Messages with random data are coming! But we just care about prices!
+Your task is to implement a function which removes all non-numeric data and return just the biggest price
+messages = ["hi", "2", "@#$%", "32"]
+result = 32
+*/
+
 class BiggestNumberFinderTest {
 
-  private BiggestNumberFinder biggestNumberFinder = new BiggestNumberFinder();
+  private final BiggestNumberFinder biggestNumberFinder = new BiggestNumberFinder();
 
   @Test
   @DisplayName("Find biggest")
