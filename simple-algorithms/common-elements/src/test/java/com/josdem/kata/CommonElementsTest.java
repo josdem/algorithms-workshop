@@ -13,6 +13,7 @@ Then I want to return elements in common.
 Input: [1,2,3,4,5] and [1,3,5,7,9]
 Output: [1, 3 ,5]
 */
+
 class CommonElementsTest {
 
   private final CommonElements commonElements = new CommonElements();
