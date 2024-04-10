@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CharacterCounterTest {
 
-  private CharacterCounter characterCounter = new CharacterCounter();
+  private final CharacterCounter characterCounter = new CharacterCounter();
 
   @Test
   @DisplayName("it counts m character")
