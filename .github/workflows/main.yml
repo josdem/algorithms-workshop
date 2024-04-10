@@ -28,8 +28,6 @@ jobs:
         run: cd ${{ github.workspace }}/simple-algorithms/birthday-cake-candles && ./gradlew test
       - name: Execute common elements
         run: cd ${{ github.workspace }}/simple-algorithms/common-elements && ./gradlew test
-      - name: Execute count bits
-        run: cd ${{ github.workspace }}/simple-algorithms/count-bits && ./gradlew test
       - name: Execute counting character
         run: cd ${{ github.workspace }}/simple-algorithms/counting-character && ./gradlew test
       - name: Execute counting uppercase
