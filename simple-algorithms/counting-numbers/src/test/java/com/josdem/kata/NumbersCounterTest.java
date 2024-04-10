@@ -1,4 +1,4 @@
-package com.jos.dem.kata;
+package com.josdem.kata;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
