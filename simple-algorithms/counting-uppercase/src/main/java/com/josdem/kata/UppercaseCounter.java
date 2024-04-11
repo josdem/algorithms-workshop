@@ -3,10 +3,10 @@ package com.josdem.kata;
 public class UppercaseCounter {
 
     public int count(String message) {
-        return message.length();
+        return message.chars().filter(Character::isUpperCase).toArray().length;
     }
 
     public boolean hasSpace(String message) {
-        return message.isEmpty();
+        return message.contains(" ");
     }
 }
