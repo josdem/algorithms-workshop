@@ -1,4 +1,4 @@
-package com.jos.dem.kata;
+package com.josdem.kata;
 
 /**
  * Given A string
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CountingUppercaseTest {
 
-  private UppercaseCounter uppercaseCounter = new UppercaseCounter();
+  private final UppercaseCounter uppercaseCounter = new UppercaseCounter();
 
   @Test
   @DisplayName("count three uppercase")
