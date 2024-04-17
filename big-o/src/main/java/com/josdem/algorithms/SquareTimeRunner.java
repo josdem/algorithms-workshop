@@ -3,6 +3,10 @@ package com.josdem.algorithms;
 import java.util.ArrayList;
 import java.util.List;
 
+/*  Type: Square Time Algorithms – O(n^2)
+    Description: Square increment amount of time based on collection size
+ */
+
 public class SquareTimeRunner {
 
     public List<Integer> getTargetNumbers(List<Integer> numbers, int target) {
