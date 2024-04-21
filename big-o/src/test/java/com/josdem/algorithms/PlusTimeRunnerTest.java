@@ -15,8 +15,8 @@ class PlusTimeRunnerTest {
     @Test
     @DisplayName("show plus time algorithm")
     void shouldCreateCollectionWithFixedSize(){
-        List<Integer> numbers = List.of(3, 9, 15, 2, 11, 1, 18, 6, 4, 10);
-        int expectedSize = 16;
-        assertEquals(expectedSize, plusTimeRunner.getList().size(), "should have expected size");
+        List<Integer> numbers = List.of(3, 9, 15, 2, 11, 5, 19, 6, 4, 10);
+        int expectedSize = 18;
+        assertEquals(expectedSize, plusTimeRunner.createNewList(numbers).size(), "should have expected size");
     }
 }
