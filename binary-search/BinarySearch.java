@@ -1,16 +1,16 @@
 public class BinarySearch {
 
-  int logarithmic(Integer[] data, int key) {
+  int logarithmic(Integer[] data, int target) {
     int startIndex = 0;
     int endIndex = data.length - 1;
 
     while (startIndex < endIndex) {
-      int midIndex = (endIndex - startIndex / 2) + startIndex;
+      int midIndex = (endIndex - startIndex ) / 2 + startIndex;
       int midValue = data[midIndex];
 
-      if (key > midValue) {
-        startIndex = midIndex++;
-      } else if (key < midValue) {
+      if (target > midValue) {
+        startIndex = midIndex;
+      } else if (target < midValue) {
         endIndex = midIndex - 1;
       } else {
         return midIndex;
