@@ -2,31 +2,16 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-class InputStream implements Comparable<InputStream> {
-    private Integer streamId;
-    private Integer nextValue;
-
-    public InputStream(Integer streamId, Integer nextValue) {
-        this.streamId = streamId;
-        this.nextValue = nextValue;
-    }
-
-    public Integer getStreamId() {
-        return streamId;
-    }
-
-    public Integer getNextValue() {
-        return nextValue;
-    }
+record InputStream(Integer streamId, Integer nextValue) implements Comparable<InputStream> {
 
     @Override
     public int compareTo(InputStream that) {
-        return this.getStreamId().compareTo(that.getStreamId());
+        return this.streamId().compareTo(that.streamId());
     }
 
     @Override
     public String toString() {
-        return this.getStreamId().toString();
+        return this.streamId().toString();
     }
 }
 
@@ -47,7 +32,7 @@ public class StreamMerger {
 
     void mergeInto(OutputStream stream) {
         TreeSet<InputStream> treeSet = new TreeSet<>(streams);
-        treeSet.forEach(item -> stream.emitValue(item.getStreamId()));
+        treeSet.forEach(item -> stream.emitValue(item.streamId()));
     }
 
     public static void main(String[] args) {
