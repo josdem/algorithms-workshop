@@ -4,9 +4,17 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Given a stream merger class
+ * And three custom stream objects with integer as id
+ * When I call mergeInto function
+ * Then I should get a collection with ordered ids from the streams
+ */
 
 class StreamMergerTest {
 
@@ -23,11 +31,11 @@ class StreamMergerTest {
         streams.add(cst3);
 
         StreamMerger streamMerger = new StreamMerger(streams);
-        streamMerger.mergeInto(new CustomOutputStream());
+        List<Integer> result = streamMerger.mergeInto(new CustomOutputStream());
 
-        assertEquals(3, streamMerger.streams().size(), "should contain three streams");
-        assertEquals(cst3, streamMerger.streams().toArray()[0], "should have cst3");
-        assertEquals(cst2, streamMerger.streams().toArray()[1], "should have cst2");
-        assertEquals(cst1, streamMerger.streams().toArray()[2], "should have cst1");
+        assertEquals(3, result.size(), "should contain three streams");
+        assertEquals(0, result.get(0), "should have cst3 value");
+        assertEquals(1, result.get(1), "should have cst2 value");
+        assertEquals(2, result.get(2), "should have cst1 value");
     }
 }
