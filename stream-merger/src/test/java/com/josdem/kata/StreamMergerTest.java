@@ -31,11 +31,11 @@ class StreamMergerTest {
         streams.add(cst3);
 
         StreamMerger streamMerger = new StreamMerger(streams);
-        List<Integer> result = streamMerger.mergeInto(new CustomOutputStream());
+        Set<CustomStream> result = streamMerger.mergeInto(new CustomOutputStream());
 
         assertEquals(3, result.size(), "should contain three streams");
-        assertEquals(0, result.get(0), "should have cst3 value");
-        assertEquals(1, result.get(1), "should have cst2 value");
-        assertEquals(2, result.get(2), "should have cst1 value");
+        assertEquals(cst3, result.toArray()[0], "should have cst3 value");
+        assertEquals(cst2, result.toArray()[1], "should have cst2 value");
+        assertEquals(cst1, result.toArray()[2], "should have cst1 value");
     }
 }
