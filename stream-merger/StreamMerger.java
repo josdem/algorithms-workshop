@@ -3,8 +3,8 @@ import java.util.Set;
 import java.util.TreeSet;
 
 class InputStream implements Comparable<InputStream> {
-    private Integer streamId;
-    private Integer nextValue;
+    private final Integer streamId;
+    private final Integer nextValue;
 
     public InputStream(Integer streamId, Integer nextValue) {
         this.streamId = streamId;
