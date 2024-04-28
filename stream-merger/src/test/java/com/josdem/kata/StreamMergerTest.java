@@ -20,9 +20,9 @@ class StreamMergerTest {
     @Test
     @DisplayName("getting an ordered stream collection")
     void shouldGetOrderedStreamCollection() {
-        CustomInputStream cst1 = new CustomInputStream(2);
-        CustomInputStream cst2 = new CustomInputStream(1);
-        CustomInputStream cst3 = new CustomInputStream(0);
+        CustomInputStream cst1 = new CustomInputStream(2, "awesome!");
+        CustomInputStream cst2 = new CustomInputStream(1, "is");
+        CustomInputStream cst3 = new CustomInputStream(0, "This");
 
         Set<CustomInputStream> streams = new HashSet<>();
         streams.add(cst1);

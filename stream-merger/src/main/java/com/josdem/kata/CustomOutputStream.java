@@ -1,16 +1,12 @@
 package com.josdem.kata;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.logging.Logger;
 
 public class CustomOutputStream {
-    private final List<Integer> list = new ArrayList<>();
+    private final Logger log = Logger.getLogger(this.getClass().getName());
 
-    void storeValue(int value) {
-        list.add(value);
+    void emitValue(String value) {
+        log.info(value);
     }
 
-    public List<Integer> getList() {
-        return list;
-    }
 }
