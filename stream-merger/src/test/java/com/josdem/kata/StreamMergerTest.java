@@ -10,9 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Given a stream merger class
- * And three custom stream objects with integer as id
+ * And three custom stream objects with integer as id and a value as String
  * When I call mergeInto function
  * Then I should get a collection with ordered ids from the streams
+ * And emit value in a custom output stream
  */
 
 class StreamMergerTest {
