@@ -21,7 +21,7 @@ jobs:
       - name: List files in the repository
         run: ls ${{ github.workspace }}
       - name: Execute stream merger tests
-        run: cd ${{ github.workspace }}/stream-merger && ./gradlew test
+        run: cd ${{ github.workspace }}/stream-merger && chmod +x ./gradlew && ./gradlew test
       - name: Execute array diff tests
         run: cd ${{ github.workspace }}/simple-algorithms/array-diff && ./gradlew test
       - name: Execute biggest price tests
