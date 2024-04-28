@@ -5,7 +5,8 @@ import java.util.logging.Logger;
 public class CustomOutputStream {
     private final Logger log = Logger.getLogger(this.getClass().getName());
 
-    void storeValue(int value) {
-        log.info("value: " + value);
+    void emitValue(String value) {
+        log.info(value);
     }
+
 }

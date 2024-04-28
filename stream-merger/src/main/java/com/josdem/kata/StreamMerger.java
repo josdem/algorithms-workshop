@@ -7,7 +7,7 @@ public record StreamMerger(Set<CustomInputStream> streams) {
 
     public Set<CustomInputStream> mergeInto(CustomOutputStream stream) {
         TreeSet<CustomInputStream> treeSet = new TreeSet<>(streams);
-        treeSet.forEach(item -> stream.storeValue(item.id()));
+        treeSet.forEach(item -> stream.emitValue(item.value()));
         return treeSet;
     }
 
