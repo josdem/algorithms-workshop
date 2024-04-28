@@ -20,6 +20,8 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: ls ${{ github.workspace }}
+      - name: Execute stream merger tests
+        run: cd ${{ github.workspace }}/stream-merger && ./gradlew test
       - name: Execute array diff tests
         run: cd ${{ github.workspace }}/simple-algorithms/array-diff && ./gradlew test
       - name: Execute biggest price tests
