@@ -4,7 +4,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -21,21 +20,21 @@ class StreamMergerTest {
     @Test
     @DisplayName("getting an ordered stream collection")
     void shouldGetOrderedStreamCollection() {
-        CustomStream cst1 = new CustomStream(2);
-        CustomStream cst2 = new CustomStream(1);
-        CustomStream cst3 = new CustomStream(0);
+        CustomInputStream cst1 = new CustomInputStream(2);
+        CustomInputStream cst2 = new CustomInputStream(1);
+        CustomInputStream cst3 = new CustomInputStream(0);
 
-        Set<CustomStream> streams = new HashSet<>();
+        Set<CustomInputStream> streams = new HashSet<>();
         streams.add(cst1);
         streams.add(cst2);
         streams.add(cst3);
 
         StreamMerger streamMerger = new StreamMerger(streams);
-        List<Integer> result = streamMerger.mergeInto(new CustomOutputStream());
+        Set<CustomInputStream> result = streamMerger.mergeInto(new CustomOutputStream());
 
         assertEquals(3, result.size(), "should contain three streams");
-        assertEquals(0, result.get(0), "should have cst3 value");
-        assertEquals(1, result.get(1), "should have cst2 value");
-        assertEquals(2, result.get(2), "should have cst1 value");
+        assertEquals(cst3, result.toArray()[0], "should have cst3 value");
+        assertEquals(cst2, result.toArray()[1], "should have cst2 value");
+        assertEquals(cst1, result.toArray()[2], "should have cst1 value");
     }
 }

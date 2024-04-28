@@ -1,8 +1,8 @@
 package com.josdem.kata;
 
-public class CustomStream {
+public class CustomInputStream {
     private final int id;
-    public CustomStream(int id) {
+    public CustomInputStream(int id) {
         this.id = id;
     }
 
