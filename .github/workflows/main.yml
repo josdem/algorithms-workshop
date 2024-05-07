@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
           java-version: '17'
@@ -20,6 +20,8 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: ls ${{ github.workspace }}
+      - name: Execute stream merger tests
+        run: cd ${{ github.workspace }}/stream-merger && chmod +x ./gradlew && ./gradlew test
       - name: Execute array diff tests
         run: cd ${{ github.workspace }}/simple-algorithms/array-diff && ./gradlew test
       - name: Execute biggest price tests
