@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-def junitJupiterVersion = '5.9.3'
+def junitJupiterVersion = '5.10.2'
 
 group 'com.josdem.kata'
 version '1.0-SNAPSHOT'
