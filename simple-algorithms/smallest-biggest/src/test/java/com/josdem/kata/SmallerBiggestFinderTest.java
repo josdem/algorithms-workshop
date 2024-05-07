@@ -3,6 +3,7 @@ package com.josdem.kata;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,5 +24,11 @@ class SmallerBiggestFinderTest {
     void shouldFindBiggestAndSmaller() {
         List<Integer> numbers = Arrays.asList(7, 5, 2, 4, 3, 9);
         assertEquals(Arrays.asList(2, 9), biggestSmallerFinder.find(numbers));
+    }
+
+    @Test
+    @DisplayName("It reruns zeros")
+    void shouldReturnZerosOnEmptyCollection() {
+        assertEquals(Arrays.asList(0, 0), biggestSmallerFinder.find(new ArrayList<>()));
     }
 }
